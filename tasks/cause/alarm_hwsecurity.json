@@ -1,0 +1,3017 @@
+[
+ {
+  "instruction": "alarms",
+  "input": "HDLC/4/LOOPBACKRESUME:OID [oid] Interface loopback is cleared. (InterfaceIndex=[INTEGER], InterfaceName=[STRING])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/IFCHANGE:OID [oid] The status of the non-virtualinterface has changed. (IfIndex=[integer], InstanceId=[integer], RouterId=[gauge],IfState=[integer], IfName=[octet], ChgReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/6/DELETEROUTE_BY_PURGE_CLEAR:OID [oid] The local device did not delete OSPF routes advertised byother devices. (SysProcessId=[integer], HostName=[octet], HostIpAddress=[ipaddr],RouterID=[ipaddr], Area=[ipaddr])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/2/PLL:OID [OID] Link bandwidth lost partly.(TrunkIndex=[INTEGER], TrunkIfIndex=[INTEGER], TrunkId=[INTEGER],TrunkName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/4/CLOCK_CHANGE:OID [oid] System clock changed.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMP/6/HWSNMPTHRESHOLDRESUME:OID [oid] The number ofunauthorized users fell back to the lower threshold of the lock queue.(FallingThreshold=[INTEGER], RaisingThreshold=[INTEGER])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MPLSTUNNELHSBRESUME:OID [oid] Main LSP of Tunnelresumes from backup LSP in HSB.(SessionTunnelId=[integer], LocalLspId=[integer],IngressLsrId=[integer], EgressLsrId=[integer], MplsTunnelAdminStatus=[integer],MplsTunnelOperStatus=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_APS_MISMATCH_R: OID [oid] The far-end APS Error alarm received by the MPLS ring in the west is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FIB/1/OVLDSUSPEND: OID [oid] The interface board isin the overload suspension state because the FIB module is overloaded.(EntityPhysicalIndex=[INTEGER], HwBaseTrapSeverity=[INTEGER], HwBaseTrapProbableCause=[INTEGER],HwBaseTrapEventType=[INTEGER], HwFibOverloadModule=[INTEGER], entPhysicalName=[STRING])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/4/PAT_FAIL:OID [oid] Patch operation failed.(ErrorIndex=[GAUGE], ErrorSlot=[GAUGE], PatchIndex=[GAUGE], ErrorCode=[INTEGER],PatchFileName=[OCTET])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/STATICLSPDOWN: OID [oid] Static LSP went Down. (LspIndex=[octet], InSegmentIndex=[octet], OutSegmentIndex=[octet], OutIfIndex=[integer], lspName=[octet], LspStatus=[integer], OutIfName=[octet], InIfIndex=[octet], InIfName=[octet],DownReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/4/INBWRATEEXCEED: OID [oid] Interface input flow bandwidth usage exceeded the trap threshold. (Interface=[INTEGER], BandWidthUsage=[INTEGER], TrapThreshold=[INTEGER], InterfaceName=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/6/PAUSERESUME:OID [OID] The PAUSE FRAME receivingrate resume. (hwIfMonitorIndex=[INTEGER], hwIfMonitorPauseFrameStatistics=[COUNTER64],hwIfMonitorPauseFrameThreshold=[INTEGER], hwIfMonitorPauseFrameInterval=[INTEGER]), hwIfMonitorName=[STRING]",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_UNEXPMEP_END:OID [oid] The MEP alarm received by the tunnel is cleared. (SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/MAXAREA_MISMATCH:OID [oid] The MaxAreaAddressfield of received PDU is different from local configuration. (sysInstance=[integer],sysInstanceofLevel=[integer], sysLevel=[integer], pduMaxAreaAddress=[integer],sysInstanceofPduMaxAreaAddress=[integer], circIndex=[integer], ifIndex=[integer],circIfIndex=[integer], pduFrag=[opaque], ifName=[string])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MRING_WEST_APS_RESUME: OID [OID] The MPLS ring in the west receives an APS switch back alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MPLS_TUNNEL_UNEXPMEG:OID [oid] The tunnel receives an MEG alarm.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/4/RELOAD_END:[OID] Reload operation completed",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/4/MPLSTUNNELREOP: OID [oid] Tunnel Re-Optimized.(SessionTunnelId=[integer],LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer],MplsTunnelAdminStatus=[integer], MplsTunnelOperStatus=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ARP/4/ARP_THRESHOLDEXCEED_TRAP:OID [OID] The number of ARP entries exceeded the threshold. (entPhysicalIndex=[INTEGER],Slot name=[OCTET], Threshold=[COUNTER], Number of dynamic ARP entries=[COUNTER], Number of static ARP entries=[COUNTER]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/SEQNUM_SKIP:OID [oid] ISIS received a self-originatedLSP with a greater sequence number. (sysInstance=[integer], sysInstanceofLevel=[integer],sysLevel=[integer], sysInstanceofCircIfIndex=[integer], circIndex=[integer],ifIndex=[integer], circIfIndex=[integer], pduLspId=[opaque], ifName=[string])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/4/IFBADRX:OID [oid]: An OSPF packet that is receivedon a non-virtual interface cannot be parsed. (IfIpAddress=[ip-address],AddressLessIf=[interface-index], ProcessId=[process-id], RouterId=[router-id],PacketSrc=[source-ip-address], PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/ADJ_CHANGE:OID [oid] The state of IS-IS adjacencychanged. (sysInstance=[integer], sysInstanceofLevel=[integer], sysLevel=[integer],sysInstanceofInterface=[integer], circuit=[integer], ifIndex=[integer],circuitIfIndex=[integer], lspID=[opaque], adjState=[integer], ifName=[string],hwIsisAdjChangeReason=[integer], hwIsisAdjChangeSubReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/VNBRHELPERCHG:OID [oid]: The helper status ofthe virtual neighbor changes. (VirtNbrAreaId=[area-id], VirtNbrRtrId=[neighbor-router-id],ProcessId=[process-id], RouterId=[router-id], VirtNbrRestartHelperStatus=[gr-helper-state],VirtNbrRestartHelperAge=[gr-helper-value], VirtNbrRestartHelperExitReason=[quit-reason],InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMP/4/COLDSTART:OID [oid] coldStart.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/ROUTE_BEDELETED_BY_PURGE: OID [oid] OSPF routesadvertised by the local device were deleted by another device. Login to the possibly faulty device. If the device is deleting routes,reset or isolate it from the network. Otherwise, check other devices.(SysProcessId=[integer], HostName=[octet], HostIpAddress=[ipaddr],RouterID=[ipaddr], Area=[ipaddr], TotalNodeNum=[integer], Log in tothe following devices to locate the faulty device: (1) HostName=[octet],HostIpAddress=[ipaddr], RouterID=[ipaddr] (2) HostName=[octet], HostIpAddress=[ipaddr],RouterID=[ipaddr] (3) HostName=[octet], HostIpAddress=[ipaddr], RouterID=[ipaddr])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_APS_LOST: OID [OID] The MPLS ringin the west receives a APS packet lost alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/IFCFGERR:OID [oid]: A packet is received on thenon-virtual interface from a router whose configuration conflictswith the local configuration. (IfIpAddress=[ip-address], AddressLessIf=[interface-index],ProcessId=[process-id], RouterId=[router-id], PacketSrc=[source-ip-address],ConfigErrorType=[error-type], PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/VNBRCHANGE:OID [oid] The status of the virtualneighbor has changed. (AreaId=[integer], VirtualNbrRouterId=[gauge],RouterId=[gauge], VNbrState=[integer], ChgReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "INFO/2/ICLogfileThreshold: OID [oid] The logfilestorage space usage reached the threshold.(Usage=[usage]%).",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_SD:OID [oid] The tunnel receives a local SD1 alarm.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_FAR_SW_FAIL_R: OID [OID] The APS switch fail alarm received by the MPLS ring in the west is cleared.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/2/PEL:OID [oid] The member of LAG receive expired PDU from partner. (TrunkIndex=[INTEGER], PortIfIndex=[INTEGER], TrunkId=[INTEGER], TrunkName=[OCTET], PortName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/3/HWBGPROUTETHRESHOLDEXCEED:OID [oid] The numberof BGP routes exceeded the threshold. (RouteTypeIndex=[integer], CurrentRouteNumber=[integer],RouteThreshold=[integer], MaximumNumber=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MplsTunnelBfdPathMismatchClear: OID [oid] Either orboth path mismatches were rectified.(Local: SessionTunnelId=[LocalSessionTunnelId],LocalLspId=[LocalLocalLspId], IngressLsrId=[LocalIngressLsrId], EgressLsrId=[LocalEgressLsrId],TunnelName=[LocalTunnelName]. Peer: SessionTunnelId=[PeerSessionTunnelId],LocalLspId=[PeerLocalLspId], IngressLsrId=[PeerIngressLsrId], EgressLsrId=[PeerEgressLsrId],TunnelName=[PeerTunnelName])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VRRP/2/VRRPV3CHANGETOMASTER:OID [oid] The status ofVRRP changed to master. (VrrpIfIndex=[VrrpIfIndex], VrId=[VrId], InetAddrType=[InetAddrType],IPAddress=[IPAddress], ChangeReason=[ChangeReason])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/6/OUTBWRATERESUME: OID [oid] Interface output flow bandwidth usage was restored to the trap threshold. (Interface=[INTEGER], BandWidthUsage=[INTEGER], TrapThreshold=[INTEGER], InterfaceName=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BULKSTAT/3/COLLECT_INCOMPLETE:OID [oid] The file collectionis incomplete during the collection period. (FileIndex=[integer],FileName=[octet])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/2/TLL:OID [oid] Link bandwidth lost totally.(TrunkIndex=[INTEGER],TrunkIfIndex=[INTEGER], TrunkId=[INTEGER], TrunkName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/4/LARGE_LSP:OID [oid] The length of the PDU tobe sent is greater than the MTU. (sysInstance=[integer], sysInstanceofLevel=[integer],sysLevel=[integer], sysInstanceofCircIfIndex=[integer], circIndex=[integer],circIfIndex=[integer], lspSizeSupport=[integer], pduLspId=[opaque])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/4/HWMPLSTUNCHANGEBW:OID [oid] The bandwidth ofthe tunnel has changed. (SessionTunnelId=[integer1], LocalLspId=[integer2],IngressLsrId=[integer3], EgressLsrId=[integer4])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/LDPVTUNNEL_DOWN:OID [oid] LDP virtual tunnelwent Down. (VirtualTunnelIndex=[gauge])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_SD_END:OID [oid] The local SD1 alarm received by the tunnel is cleared.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MRING_EAST_APS_SWITCH: OID [OID] The MPLS ring in the east receives an APS switch alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/VIFCFGERR:OID [oid]: A packet is received onthe virtual interface from a router whose configuration conflictswith the local configuration. (VirtIfAreaId=[area-id], VirtIfNeighbor=[neighbor-router-id],ProcessId=[process-id], RouterId=[router-id], ConfigErrorType=[error-type],PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/VIFCHANGE:OID [oid] The status of the virtualinterface has changed. (AreaId=[integer], NbrRouterId=[gauge], RouterId=[gauge],VIfState=[integer], ChgReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/STATICLSPUP:OID [oid] Static LSP went Up. (LspIndex=[octet],InSegmentIndex=[octet], OutSegmentIndex=[octet], OutIfIndex=[integer], LspName=[octet], LspStatus=[integer], OutIfName=[octet], InIfIndex=[octet],InIfName=[octet], DownReason=[integer])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/STATICCRLSPUP: OID [oid] Static CR-LSP went Up. (LspIndex=[octet], InSegmentIndex=[octet], OutSegmentIndex=[octet], OutIfIndex=[integer], LspName=[octet], LspStatus=[integer], OutIfName=[octet], InIfIndex=[octet], InIfName=[octet],DownReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/AUTH_FAIL:OID [oid] The authentication passwordof received PDU is different from local configuration. (sysInstance=[integer],sysInstanceofLevel=[integer], sysLevel=[integer], sysInstanceofCircIfIndex=[integer],circIndex=[integer], ifIndex=[integer], circIfIndex=[integer], pduFrag=[opaque],ifName=[string])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/APPROFLOW:OID [oid]: The LSDB is approachingoverflow. (ProcessId=[process-id], RouterId=[router-id], ExtLsdbLimit=[lsa-limit],InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/VIFRETX:OID [oid]: An OSPF packet is retransmittedon a virtual interface. (VirtIfAreaId=[area-id], VirtIfNeighbor=[neighbor-router-id],LsdbAreaId=[lsdb-area-id], LsdbType=[lsa-type], LsdbLsid=[lsdb-ls-id],LsdbRouterId=[lsdb-router-id], ProcessId=[process-id], RouterId=[router-id],PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FIB/1/INCONSISFORMEMLACK: OID [oid] Because thememory usage of the interface board exceeds the upper threshold, theFES cannot add new entries. As a result, the entries of the interfaceboard is inconsistent with those of the main board. (EntityPhysicalIndex=[INTEGER],HwBaseTrapSeverity=[INTEGER], HwBaseTrapEventType=[INTEGER], EntPhysicalName=[STRING])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NE5KQOS/4/PORT_QUEUE_DISCARD_ALARM_CANCEL:OID 1.3.6.1.4.1.2011.5.25.132.3.6Port queue discard alarm cleared. (Interface=[STRING], Queue=[STRING], DiscardType=[STRING],DiscardValue=[STRING])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MPLS_TUNNEL_RDI:OID [oid] The tunnel receives an RDI alarm. (SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], IfIndex=[integer], TunnelName=[octet], SignalingProtocol=[integer], IfName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLSTUNNELDOWN:OID [oid] Tunnel Changes to Down.(SessionTunnelId=[integer],LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer],OutIfIndex=[integer], mplsTunnelAdminStatus=[integer], mplsTunnelOperStatus=[integer],mplsTunnelIfName=[octet], OutIfName=[octet], mplsTunnelDownReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/3/GRSTATUSCHANGE:OID [oid] The graceful restartstatus of the BGP peer changed. (InstanceId=[gauge], Afi=[integer],Safi=[integer], PeerType=[integer], PeerRemoteAddr=[binary], GrStatus=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/6/HWBGPROUTEMAXCLEAR:OID [oid] The number of BGProutes decreased below the maximum number. (RouteTypeIndex=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MPLS_TUNNEL_LOCV_END:OID [oid] The consecutive packet loss alarm received by the tunnel is cleared.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/6/THIRDPARTROUTE_BEDELETED_BY_PURGE_CLEAR:OID [oid] OSPF routes advertised by another device were not deleted.(SysProcessId=[integer], HostName=[octet], HostIpAddress=[ipaddr],RouterID=[ipaddr], Area=[ipaddr])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPV6/2/IF_IPV6CHANGE:OID [oid] The status of the IPV6Interface changed. (IfIndex=[INTEGER], IfDescr=[OCTET], IfOperStatus=[INTEGER],IfAdminStatus=[INTEGER])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMP/4/WARMSTART:OID [oid] warmStart.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/NBRCHG:OID [oid]: The status of the non-virtual neighbor changes. (NbrIpAddress=[neighbor-ip-address], NbrAddressLessIndex=[neighbor-interface-index], ProcessId=[process-id], AreaId=[area-id], IfnetIndex=[interface-ifnet-index],LocalIfIpAddress=[local-ip-address], ProcessId=[process-id], RouterId=[router-id], NbrRtrId=[neighbor-router-id], NbrState=[neighbor-state], IfName=[interface-name], InstanceName=[instance-name], NbrChgReason=[NbrStateChangeReason])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ARP/6/ARP_THRESHOLDRESUME_TRAP:OID [OID] The number of ARP entries was restored to the threshold. (entPhysicalIndex=[INTEGER],Slot name=[OCTET], Threshold=[COUNTER], Number of dynamic ARP entries=[COUNTER], Number of static ARPentries=[COUNTER]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LINE/5/VTYUSERLOGIN:OID [oid] A user login. (UserIndex=[INTEGER],UserName=[STRING], UserIP=[STRING], UserChannel=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTMIB/4/TRAP:OID 1.3.6.1.2.1.47.2.0.1 Entity MIB change.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/NBRCHANGE:OID [oid] The status of the non-virtualneighbor has changed. (IfIndex=[integer], InstanceId=[integer], NbrRouterId=[gauge],RouterId=[gauge], NbrState=[integer], IfName=[octet], ChgReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MplsTunnelBfdPathMismatch: OID [oid] The forward primaryLSP path is the same as the reverse hot-standby LSP path, and thereverse primary LSP path is the same as the forward hot-standby LSPpath, causing path mismatches.(Local: SessionTunnelId=[LocalSessionTunnelId],LocalLspId=[LocalLocalLspId], IngressLsrId=[LocalIngressLsrId], EgressLsrId=[LocalEgressLsrId],TunnelName=[LocalTunnelName]. Peer: SessionTunnelId=[PeerSessionTunnelId],LocalLspId=[PeerLocalLspId], IngressLsrId=[PeerIngressLsrId], EgressLsrId=[PeerEgressLsrId],TunnelName=[PeerTunnelName])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_OAM_UNEXPMEP: OID[OID] The MPLS Ring in the west receives a MEP alarm.(RingId=[INTEGER],RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_FAR_SW_FAIL_R: OID [OID] The APS switch fail alarm received by the MPLS ring in the east is cleared.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/SYSID_MISMATCH:OID [oid] The ID length of receivedPDU is different from local configuration. (sysInstance=[integer],sysInstanceofLevel=[integer], sysLevel=[integer], sysInstanceofPduFieldLen=[integer],circIndex=[integer], ifIndex=[integer], pduFieldLen=[integer], circIfIndex=[integer],pduFrag=[opaque], ifName=[string])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/VIFAUTFAIL:OID [oid]: A packet is received ona virtual interface from a router whose authentication key or authenticationtype conflicts with the local authentication key or authenticationtype. (VirtIfAreaId=[area-id], VirtIfNeighbor=[neighbor-router-id],ProcessId=[process-id], RouterId=[router-id], ConfigErrorType=[error-type],PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/OLOAD:OID [oid] The overload state of IS-IS LSDBchanged. (sysInstance=[integer], sysInstanceofLevel=[integer], sysLevel=[integer],overLoadState=[integer])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/4/VIFBADRX:OID [oid]: An OSPF packet that is receivedon a virtual interface cannot be parsed. (VirtIfAreaId=[area-id],VirtIfNeighbor=[neighbor-router-id], ProcessId=[process-id], RouterId=[router-id],PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/6/TLR:OID [oid] Link bandwidth lost totally is resumed. (TrunkIndex=[INTEGER], TrunkIfIndex=[INTEGER], TrunkId=[INTEGER], TrunkName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MRING_EAST_APS_RESUME: OID [OID] The MPLS ring in the east receives an APS switch back alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/3/VNBRHELPERSTATUSCHNG:OID [oid] The helper statusfor the virtual neighbor has changed. (AreaId=[integer], VirtualNbrRouterId=[gauge],RouterId=[gauge], State=[integer], HelperAge=[integer], HelperExitReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FM/4/TARGETHOST_DEL:OID [oid] Target host [octet] wasdeleted.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/LDPVTUNNEL_UP:OID [oid] LDP virtual tunnel wentUp. (VirtualTunnelIndex=[gauge])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/3/VIFRXBADPKT:OID [oid] Error packet was receivedon the virtual interface. (AreaId=[integer], VirtualNbrRouterId=[gauge],RouterId=[gauge], VIfState=[integer], PacketType=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BULKSTAT/2/CONNECTION_RESUME:OID [oid] Succeeded inuploading the URL. (FileIndex=[integer], FileName=[octet], PrimaryUrl=[octet],SecondaryUrl=[octet])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/3/NSSATRNSLTRSTSCHNG:OID [oid] The status ofthe NSSA translator has changed. (AreaId=[integer], RouterId=[gauge],State=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/3/SWITCH_SUCCESS:OID [oid] Slave switchover success.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/1/PAT_RECOVER:OID [oid] The patch fault is removed.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VFS/3/VFS_MASTERHD_ERROR:OID [oid] The main harddiskhad been uninstalled because of some error.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BULKSTAT/4/FILE_DISCARD:OID [oid] The file was discardedbecause of transfer failure. (FileIndex=[integer], FileName=[octet],LastTransferFailTime=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/OWNLSP_PURGE:OID [oid] ISIS received a self-originatedLSP with the age being 0. (sysInstance=[integer], sysInstanceofLevel=[integer],sysLevel=[integer], sysInstanceofInterface=[integer], circuit=[integer],ifIndex=[integer], circuitIfIndex=[integer], pduLspId=[opaque], pduRemoteRouterID=[integer],ifName=[string])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/6/ROUTE_BEDELETED_BY_PURGE_CLEAR:  OID [oid] OSPFroutes advertised by the local device were not deleted by anotherdevice. (SysProcessId=[integer], HostName=[octet], HostIpAddress=[ipaddr],RouterID=[ipaddr], Area=[ipaddr])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VRRP/2/VRRPV3PROTOERROR: OID [oid] VRRP received protocolerror packet. (VrrpIfIndex=[INTEGER], VrId=[INTEGER], InetAddrType=[INTEGER],ProtoErrorType=[INTEGER])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/4/PAT_OVERTIME:OID [oid] The patch is active for 24 hours.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMP/4/HWSNMPTHRESHOLD:OID [oid] The number of unauthorized users reached the upper threshold of the lock queue.(FallingThreshold=[INTEGER], RaisingThreshold=[INTEGER])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/AREA_MISMATCH:OID [oid] IS-IS received a level-1Hello PDU whose area address is different from the local area address.(sysInstance=[integer], sysInstanceofLevel=[integer], sysLevel=[integer],sysInstanceofCircIfIndex=[integer], circIndex=[integer], ifIndex=[integer],circIfIndex=[integer], pduFragment=[opaque], ifName=[string])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/2/BACKWARD:OID [oid] The BGP FSM moves from a higher numbered state to a lower numbered state. (BgpPeerRemoteAddr=[ipaddr], InstanceId=[gauge], Afi=[integer], Safi=[integer], PeerType=[integer], PeerRemoteAddr=[binary], InterfaceIndex=[integer],BgpPeerLastError=[octet], BgpPeerState=[integer], BgpPeerUnavaiReason=[gauge], InterfaceName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/ROUTERID_CONFLICT_RECOVER: OID [oid] RouterIDs confliction is recovered. (ProcessId=[integer], AreaId=[integer],OldRouterId=[gauge], NewRouterId=[gauge])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/RESTARTCHG:OID [oid]: The GR status changes.(ProcessId=[process-id], RouterId=[router-id], RestartStatus=[gr-reason],RestartInterval=[gr-value], RestartExitReason=[quit-reason], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/OVERFLOW:OID [oid]: The LSDB overflows. (ProcessId=[process-id],RouterId=[router-id], ExtLsdbLimit=[lsa-limit], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/4/MPLSTUNNELREROUTED: OID [oid] Tunnel Re-routed.(SessionTunnelId=[integer],LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer],MplsTunnelAdminStatus=[integer], MplsTunnelOperStatus=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/4/MPLSXCUP:OID [oid] LSP went Up. (BeginLspIndex=[octet].[octet].[octet],EndLspIndex=[octet].[octet].[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/NSSATRANCHG:OID [oid]: The status of the NSSA translator changes. (AreaId=[area-id], ProcessId=[process-id], RouterId=[router-id], NSSATranslatorState=[translator-state], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/2/MNCD:OID [oid] The member of LAG neither cantake over PDU nor transmit PDUs. (TrunkIndex=[INTEGER], PortIfIndex=[INTEGER],TrunkId=[INTEGER], TrunkName=[OCTET], PortName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BULKSTAT/2/CONNECTION_FAILED:OID [oid] Failed to uploadthe URL. (FileIndex=[integer], FileName=[octet],PrimaryUrl=[octet],SecondaryUrl=[octet])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BULKSTAT/3/COLLECT_RESUME:OID [oid] The file collectionresumed itself to normal during next collection period. (FileIndex=[integer],FileName=[octet])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/IFCFGERR:OID [oid] The configuration of thenon-virtual interface is incorrect. (IfIndex=[integer], InstanceId=[integer],RouterId=[gauge], IfState=[integer], PacketSrcAdd=[octet], ErrorType=[integer],PacketType=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_FAR_SW_FAIL: OID [OID] The MPLS ring in the west receives an APS switch fail alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/1/CRCERRORRISING: OID [oid] The CRC error is rising. (hwIfMonitorIndex=[INTEGER], hwIfMonitorCrcErrorStatistics=[COUNTER64], hwIfMonitorCrcErrorThreshold=[INTEGER], hwIfMonitorCrcErrorInterval=[INTEGER], InterfaceName=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/3/HWBGPROUTEMAXEXCEED:OID [oid] The number of BGProutes exceeded the maximum number. (RouteTypeIndex=[integer], MaximumNumber=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SINDEX/3/IFINDEX: OID [oid] ShortIFIndex is used up.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/IFCHG:OID [oid]: The status of the non-virtualinterface changes. (IfIpAddress=[ipaddr], AddressLessIf=[integer],ProcessId=[integer], AreaId=[ipaddr], IfnetIndex=[integer], ProcessId=[integer],RouterId=[ipaddr], IfState=[integer], IfName=[octet], InstanceName=[octet],IfChgReason=[integer])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/4/MPLSXCDOWN:OID [oid] LSP went Down. (BeginLspIndex=[octet].[octet].[octet], EndLspIndex=[octet].[octet].[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/1/DELETEROUTE_BY_PURGE: OID [oid] The local device deleted OSPF routes advertised by other devices. Reset or isolate the device from the network. (SysProcessId=[integer], HostName=[octet], HostIpAddress=[ipaddr], RouterID=[ipaddr], Area=[ipaddr], FlushLsaNum=[integer], AffectedNodeNum=[integer], TotalNodeNum=[integer], Interval=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MPLS_TUNNEL_LOCV:OID [oid] The tunnel receives a consecutive packet loss alarm.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], IfIndex=[integer], TunnelName=[octet], SignalingProtocol=[integer],IfName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/PROTO_MISMATCH:OID [oid] The protocol of receivedProtocol TLV is mismatched with local configuration. (sysInstance=[integer],sysInstanceofLevel=[integer], sysLevel=[integer], sysInstanceofCircIfIndex=[integer],circIndex=[integer], ifIndex=[integer], circIfIndex=[integer], pduProtocolsSupported=[opaque],pduLspId=[opaque], pduFragment=[opaque], ifName=[string])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/LASTAUTHKEYEXPIRY:OID [oid] The last authenticationkey in keychain has expired. (RouterId=[gauge], IfName=[octet])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/THIRDPARTROUTE_BEDELETED_BY_PURGE: OID [oid] OSPF routes advertised by another device were deleted. Log in to the possibly faulty device. If the device is deleting routes, reset or isolate it from the network. Otherwise, check other devices. (SysProcessId=[integer], HostName=[octet], HostIpAddress=[ipaddr], RouterID=[ipaddr], Area=[ipaddr], TotalNodeNum=[integer], Log in to the following devices to locate the faulty device: (1) HostName=[octet], HostIpAddress=[ipaddr], RouterID=[ipaddr] (2) HostName=[octet], HostIpAddress=[ipaddr], RouterID=[ipaddr] (3) HostName=[octet], HostIpAddress=[ipaddr], RouterID=[ipaddr])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/3/RESTARTSTATUSCHANGE:OID [oid] The gracefulrestart status of the router has changed. (RouterId=[gauge], State=[integer],RestartInterval=[integer], RestartExitReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_UNEXPMEP:OID [oid] The tunnel receives an MEP alarm. (SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FIB/6/INCONSISFORMEMLACKRESUME: OID [oid] The memoryusage of the interface board reduces to the lower threshold, and theFES can add entries. The entries of the interface board is consistentwith those of the main board. (EntityPhysicalIndex=[INTEGER], HwBaseTrapSeverity=[INTEGER],HwBaseTrapEventType=[INTEGER], EntPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/6/PLR:OID [oid] Link bandwidth lost partly is resumed. (TrunkIndex=[INTEGER], TrunkIfIndex=[INTEGER], TrunkId=[INTEGER], TrunkName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/2/ROUTETHRESHOLDEXCEED:OID [oid] The numberof routes received from the BGP peer exceeded the alarm threshold.(InstanceId=[gauge], Afi=[integer], Safi=[integer], PeerType=[integer],PeerRemoteAddr=[binary], MaxRouteNum=[gauge], AlarmThreshold=[gauge])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FIB/1/OVLDFORWARD: OID [oid] The interface board isin the overload forwarding state because the FIB module is overloaded.(EntityPhysicalIndex=[INTEGER], HwBaseTrapSeverity=[INTEGER], HwBaseTrapProbableCause=[INTEGER],HwBaseTrapEventType=[INTEGER], HwFibOverloadModule=[INTEGER], entPhysicalName=[STRING])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MRING_EAST_OAM_LOCV: OID [oid] MPLS Ring in theeast receives a connectivity loss alarm. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_OAM_UNEXPMEP: OID[OID] The MPLS Ring in the east receives a MEP alarm.(RingId=[INTEGER],RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/2/HWBACKWARD:OID [oid] The BGP FSM moves from a higher numbered state to a lower numbered state. (InstanceId=[gauge], Afi=[integer], Safi=[integer], PeerType=[integer], PeerRemoteAddr=[binary], InterfaceIndex=[integer], PeerLastError=[octet],PeerState=[integer], PeerUnavaiReason=[gauge], InterfaceName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLSTUNNELUP:OID [oid] Tunnel Changes to Up.(SessionTunnelId=[integer],LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer],OutIfIndex=[integer], mplsTunnelAdminStatus=[integer], mplsTunnelOperStatus=[integer],mplsTunnelIfName=[octet], OutIfName=[octet], mplsTunnelDownReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/6/HWBGPROUTETHRESHOLDCLEAR:OID [oid] The numberof BGP routes decreased below the threshold. (RouteTypeIndex=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/4/OGNLSA:OID [oid]: An LSA is generated. (LsdbAreaId=[area-id],LsdbType=[lsa-type], LsdbLsid=[lsdb-ls-id], LsdbRouterId=[lsdb-router-id],ProcessId=[process-id], RouterId=[router-id], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_APS_LOST_R: OID [oid] The APS packet lost alarm received by the MPLS ring in the west is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_FAR_SW_FAIL: OID [OID] The MPLS ring in the east receives an APS switch fail alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_UNEXPPER:OID [oid] The tunnel receives a period inconsistency alarm.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/NBBRCHG:OID [oid]: The status of the virtualneighbor changes. (VirtNbrArea=[area-id], VirtNbrRtrId=[neighbor-router-id],ProcessId=[process-id], RouterId=[router-id], VirtNbrState=[neighbor-state],InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_APS_LOST_R: OID [oid] The APS packet lost alarm received by the MPLS ring in the east is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_SF_END:OID [oid] The SD2 alarm received by the tunnel is cleared. (SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/4/LICENSE_CHANGE:OID [oid] The system license file changed. (hwSysReloadScheduleIndex=[hwSysReloadScheduleIndex],hwSysLicenseFileIndex=[hwSysLicenseFileIndex],hwSysReloadEntity=[hwSysReloadEntity],hwSysLicenseFileName=[hwSysLicenseFileName])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "TRUNK/2/EXT_LINKUP:OID [oid] The link status of the trunk member interface turned to UP.(ifIndex=[INTEGER], ifAdminStatus=[INTEGER], ifOperStatus=[INTEGER], ifDescr=[STRING], hwIFExtPhyStatus=[INTEGER], hwIFExtMemberOf=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FIB/6/RECOVEROVLDFRD: OID [oid] The interfaceboard changes from the overload forwarding state to the normal state.(EntityPhysicalIndex=[INTEGER], HwBaseTrapSeverity=[INTEGER], HwBaseTrapProbableCause=[INTEGER],HwBaseTrapEventType=[INTEGER], HwFibOverloadModule=[INTEGER], entPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/VERSION_SKEW:OID [oid] IS-IS received a PDU withincorrect ProtocolVersion. (sysInstance=[integer], sysInstanceofLevel=[integer],sysLevel=[integer], sysInstanceofCircIfIndex=[integer], circIndex=[integer],ifIndex=[integer], circIfIndex=[integer], pduProtocolVersion=[integer],pduFragment=[opaque], ifName=[string])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MRING_WEST_OAM_LOCV_R: OID [oid] The connectivity loss alarm received by the MPLS ring in the west is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_APS_MISMATCH: OID [OID] The MPLS ringin the west receives a far-end APS Error alarm.(RingId=[INTEGER],RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/AUTHTYPE_FAIL:OID [oid] The authentication typeof received PDU is different from local configuration. (sysInstance=[integer],sysInstanceofLevel=[integer], sysLevel=[integer], sysInstanceofCircIfIndex=[integer],circIndex=[integer], ifIndex=[integer], circIfIndex=[integer], pduFrag=[opaque],ifName=[string])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MPLSTUNNELOBSWITCH:OID [oid] Main LSP of Tunnelswitches to back up LSP in OB.(SessionTunnelId=[integer],LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer],MplsTunnelAdminStatus=[integer], MplsTunnelOperStatus=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/RTRID_CONFLCT:OID [oid]: Router IDs conflictin an intra area. (ProcessId=[integer], AreaId=[ipaddr], SelfIfnetIndex=[integer],NbrIpAddr=[ipaddr], RouterId=[ipaddr], NbrRtrId=[ipaddr])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/6/ESTABLISHED:OID [oid] The BGP FSM enters the Established state.(BgpPeerRemoteAddr=[BgpPeerRemoteAddrValue], BgpPeerLastError=[BgpPeerLastErrorValue],BgpPeerState=[BgpPeerStateValue])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_OAM_UNEXPMEP_R: OID [OID]The MEP alarm received by the MPLS ring in the east is cleared.(RingId=[INTEGER],RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MRING_EAST_OAM_LOCV_R: OID [oid] The connectivity loss alarm received by the MPLS ring in the east is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VFS/4/CPYCOMPLETE:OID [oid] Copy operation completed.(CopyIndex=[integer], CopyStatus=[integer])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FR/4/TRAP:OID [oid] Interface [interface-index] DLCI [dlci] turns into [state] state (invalid(1), active(2), inactive(3)).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/6/IF_LINKUP: OID [oid] Interface [interface-index] turned into UP state.(AdminStatus=[INTEGER],OperStatus=[INTEGER],InterfaceName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/3/SWITCH_FAIL:OID [oid] Slave switchover fail.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FIB/6/RECOVEROVLDSUSPEND: OID [oid] The interface boardchanges from the overload suspension state to the normal state. (EntityPhysicalIndex=[INTEGER],HwBaseTrapSeverity=[INTEGER], HwBaseTrapProbableCause=[INTEGER], HwBaseTrapEventType=[INTEGER],HwFibOverloadModule=[INTEGER], entPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/VIFCHG:OID [oid]: The status of the virtual interfacechanges. (VirtIfAreaId=[area-id], VirtIfNeighbor=[neighbor-router-id],ProcessId=[process-id], RouterId=[router-id], VirtIfState=[neighbor-state],InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/1/MPLS_TUNNEL_UNEXPMEG_END:OID [oid] The MEG alarm received by the tunnel is cleared.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_APS_MISMATCH: OID [oid] The MPLS ringin the east receives a far-end APS Error alarm. (RingId=[INTEGER],RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/IPADDR_CONFLCT:OID [oid]: IP addresses of DRsin an intra area conflict. (ProcessId=[integer], AreaId=[ipaddr],SelfIfnetIndex=[integer], NbrIpAddr=[ipaddr], RouterId=[ipaddr], IntierfaceIpAddress=[ipaddr],InterfaceName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/3/IFRXBADPKT:OID [oid] Error packet was receivedon the non-virtual interface. (IfIndex=[integer], InstanceId=[integer],RouterId=[gauge], IfState=[integer], PacketSrcAdd=[octet], PacketType=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/3/NBRHELPERSTATUSCHNG:OID [oid] The helper statusfor the non-virtual neighbor has changed. (IfIndex=[integer], InstanceId=[integer],NbrRouterId=[gauge], RouterId=[gauge], State=[integer], HelperAge=[integer],HelperExitReason=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/2/MANAREA_DROP:OID [oid] Some area addresses werediscarded because the number of area addresses exceeded three. (sysInstance=[process-id],sysInstanceofLevel=[process-id], sysLevel=[level], sysInstanceofManAreaAddrExistState=[process-id],manAreaAddr=[area-address], manAreaAddrExistState=[area-address-state])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/OSPF_TRAPID_PEERSUPPRESS_STATUS_CHG: OID [oid] The status of peer flapping suppress is changed.(ProcessId=[integer], ProcessId=[integer], AreaId=[ipaddr], SelfIfnetIndex=[integer], AreaId=[ipaddr], ifName=[octet], SuppressStatus=[integer], SuppressReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/6/CRCERRORRESUME: OID [oid] The CRC error resume. (hwIfMonitorIndex=[INTEGER], hwIfMonitorCrcErrorStatistics=[COUNTER64], hwIfMonitorCrcErrorThreshold=[INTEGER], hwIfMonitorCrcErrorInterval=[INTEGER], InterfaceName=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/AUTHSEQUENCENUMWRAP:OID [oid] The cryptographicsequence number has wrapped. (RouterId=[gauge], IfName=[octet])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/1/IF_LINKDOWN: OID [oid] Interface [interface-index] turned into DOWN state.(AdminStatus=[INTEGER],OperStatus=[INTEGER],InterfaceName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/CORRUPT_LSP:OID [oid] The checksum of LSP iswrong. (sysInstance=[integer], sysInstanceofLevel=[integer], sysLevel=[integer],pduLspId=[opaque])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/MAXSEQ_EXCEED:OID [oid] The LSP sequence number almost reaches the maximum value. (sysInstance=[integer], sysInstanceofLevel=[integer], sysLevel=[integer], pduLspId=[opaque])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/3/NBRHELPERCHG:OID [oid]: The helper status ofthe non-virtual neighbor changes. (NbrIpAddr=[ip-address], NbrAddressLessIndex=[interface-index],ProcessId=[process-id], RouterId=[router-id], NbrRtrId=[neighbor-router-id],NbrRestartHelperStatus=[gr-helper-state], NbrRestartHelperAge=[gr-helper-value],NbrRestartHelperExitReason=[quit-reason], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "INFO/4/IC_LOGFILE_AGING:OID [OID]One log file is deleted due to aging. (LogFileName=[LogFileName])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NTP/1/NTP_TRAP_SYNCHRONIZE_STATUS:OID [oid] NTP synchronization state changed. (hwNtpState=[STRING], hwNtpSource=[STRING], hwNtpSourceVpnName=[STRING])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MRING_WEST_OAM_RDI_R: OID [oid] The RDI alarm received by the MPLS ring in the west is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "TRUNK/3/AMDN:OID [OID] The last member interface linkstatus changes to down. (TrunkIfIndex=[INTEGER], TrunkName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_WEST_OAM_UNEXPMEP_R: OID [OID]The MEP alarm received by the MPLS ring in the west is cleared.(RingId=[INTEGER],RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MRING_EAST_OAM_RDI: OID [OID] The MPLS Ring inthe east receives an RDI alarm. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/6/HWESTABLISHED:OID [oid] The BGP FSM entersthe Established state. (InstanceId=[gauge], Afi=[integer], Safi=[integer],PeerType=[integer], PeerRemoteAddr=[binary], PeerLastError=[octet],PeerState=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "TRUNK/6/AMDR:OID [OID] The first member interface link status changes to up. (TrunkIfIndex=[INTEGER], TrunkName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/VIFCFGERR:OID [oid] The configuration of thevirtual interface is incorrect. (AreaId=[integer], VirtualNbrRouterId=[gauge],RouterId=[gauge], VIfState=[integer], ErrorType=[integer], PacketType=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/2/IFAUTFAIL:OID [oid]: A packet is received ona non-virtual interface from a router whose authentication key orauthentication type conflicts with the local authentication key orauthentication type. (IfIpAddress=[ip-address], AddressLessIf=[interface-index],ProcessId=[process-id], RouterId=[router-id], PacketSrc=[source-ip-address],ConfigErrorType=[error-type], PacketType=[packet-type], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPFV3/2/NBRDAMP_SUPPRESS: OID [oid] The status of peerflapping suppress is changed.(ProcessId=[integer], RouterId=[integer],AreaId=[integer], ifName=[octet], SuppressStatus=[integer], SuppressReason=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMP/4/AUTHFAIL:OID [oid] authenticationFailure. (RemoteIpAddressType=[INTEGER], RemoteIpAddress=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "RIP/2/DBOVERFLOW:OID [oid]: The number of routes onRIP process reached the upper threshold, and thus the RIP processwas suspended. (ProcTableIndex=[INTEGER], ProcessId=[INTEGER], DataBaseLimit=[GAUGE])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/4/AGELSA:OID [oid]: An LSA is aged. (LsdbAreaId=[area-id],LsdbType=[lsa-type], LsdbLsid=[lsdb-ls-id], LsdbRouterId=[lsdb-router-id],ProcessId=[process-id], RouterId=[router-id], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/1/HALFDUPLEXRISING: OID [oid] The work mode is half duplex. ( hwIfMonitorIndex=[INTEGER])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VFS/4/VFS_SYNC_FAILED:OID [oid] Copy operation failed.(CopyIndex=[integer], SyncSourceFile=[OCTET], SyncDestinationFile=[OCTET])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MPLSTUNNELOBRESUME:OID [oid] Main LSP of Tunnelresumes from backup LSP in OB.(SessionTunnelId=[integer], LocalLspId=[integer],IngressLsrId=[integer], EgressLsrId=[integer], MplsTunnelAdminStatus=[integer],MplsTunnelOperStatus=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MPLS_TUNNEL_RDI_END:OID [oid] The RDI alarm received by the tunnel is cleared. (SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_APS_LOST: OID [OID] The MPLS ringin the east receives a APS packet lost alarm.(RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MRING_EAST_APS_MISMATCH_R: OID [oid] The far-end APS Error alarm received by the MPLS ring in the east is cleared. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "INFO/2/ICLogfileInsufficientSpace:OID [OID] The logfile storage space usage reaches the upper limit.",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VFS/1/VFS_SLAVEHD_ERROR:OID [oid] The slave harddiskhad been uninstalled because of some error.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HDLC/4/LOOPBACK:OID [oid] Interface loopback is detected.(InterfaceIndex=[INTEGER], InterfaceName=[STRING])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_SF:OID [oid] The tunnel receives an SD2 alarm.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "RIP/6/DBOVERFLOWRESUME:OID [oid] The number of routesreached the lower threshold, and thus RIP process recovered from thesuspension state and resumed processing packets. (ProcTableIndex=[INTEGER],ProcessId=[INTEGER], DataBaseLimit=[GAUGE], ThresholdLevel=[OCTET])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/REJECT_ADJ:OID [oid] IS-IS failed to establish the adjacency with its peer. (sysInstance=[integer], sysInstanceofLevel=[integer], sysLevel=[integer], sysInstanceofCircIfIndex=[integer], circIndex=[integer], ifIndex=[integer], circIfIndex=[integer],pduFragment=[opaque], ifName=[string], hwIsisAdjChangeReason=[integer], hwIsisAdjChangeSubReason=[integer])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_AIS:OID [oid] The tunnel receives an AIS alarm.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ARP/4/ARP_IPCONFLICT_TRAP:OID [OID] ARP detects IP conflict.(IP address=[IPADDR], Local interface=[OCTET], Local MAC=[OCTET],Local vlan=[INTEGER], Local CE vlan=[INTEGER], Receive interface=[OCTET],Receive MAC=[OCTET], Receive vlan=[INTEGER], Receive CE vlan=[INTEGER],IP conflict type=[OCTET]).",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VFS/4/VFS_SYNC_SUCCESS:OID [oid] Copy operation success. (CopyIndex=[integer], SyncSourceFile=[OCTET], SyncDestinationFile=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/4/INBWRATERESUME: OID [oid] Interface input flow bandwidth usage was restored to the trap threshold. (Interface=[INTEGER], BandWidthUsage=[INTEGER], TrapThreshold=[INTEGER], InterfaceName=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BGP/6/ROUTETHRESHOLDCLEAR:OID [oid] The numberof routes received from the BGP peer decreased below the alarm threshold.(InstanceId=[gauge], Afi=[integer], Safi=[integer], PeerType=[integer],PeerRemoteAddr=[binary], MaxRouteNum=[gauge], AlarmThreshold=[gauge])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/4/PAF_CHANGE:OID [oid] The system PAF file changed. (hwSysReloadScheduleIndex=[hwSysReloadScheduleIndex],hwSysPafFileIndex=[hwSysPafFileIndex],hwSysReloadEntity=[hwSysReloadEntity],hwSysPafFileName=[hwSysPafFileName])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/4/OUTBWRATEEXCEED: OID [oid] Interface output flow bandwidth usage exceeded the trap threshold. (Interface=[INTEGER], BandWidthUsage=[INTEGER], TrapThreshold=[INTEGER], InterfaceName=[STRING])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "OSPF/4/IFRETX:OID [oid]: An OSPF packet is retransmittedon a non-virtual interface. (IfIpAddress=[ipaddr], AddressLessIf=[integer],NbrIfIpAddress=[ipaddr], NbrAddressLessIf=[ipaddr], LsdbAreaId=[ipaddr],LsdbType=[integer], LsdbLsid=[ipaddr], LsdbRouterId=[ipaddr], ProcessId=[process-id],RouterId=[ipaddr], IfNeighbor=[ipaddr], PacketType=[integer], InstanceName=[instance-name])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_AIS_END:OID [oid] The AIS alarm received by the tunnel is cleared.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/3/MRING_WEST_OAM_RDI: OID [OID] The MPLS Ring inthe west receives an RDI alarm. (RingId=[INTEGER], RingName=[OCTET])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LSPM/2/MPLS_TUNNEL_UNEXPPER_END:OID [oid] The period inconsistency alarm received by the tunnel is cleared.(SessionTunnelId=[INTEGER], LocalLspId=[integer], IngressLsrId=[integer], EgressLsrId=[integer], TunnelName=[octet], SignalingProtocol=[integer])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FM/4/ALARM_STORM:OID [oid] There are excessive traps,which form a trap storm.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IFNET/1/PAUSERISING:OID [OID] The PAUSE FRAME receiving rate is rising. (hwIfMonitorIndex=[INTEGER], hwIfMonitorPauseFrameStatistics=[COUNTER64], hwIfMonitorPauseFrameThreshold=[INTEGER], hwIfMonitorPauseFrameInterval=[INTEGER]), hwIfMonitorName=[STRING]",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ISIS/3/LSPMTU_MISMATCH: OID [oid] The size of the localbuffer for originating IS-IS LSPs is smaller than the size of thereceived LSP. (sysInstance=[integer], sysInstanceofLevel=[integer],sysLevel=[integer], sysInstanceofCircIfIndex=[integer], circIndex=[integer],ifIndex=[integer], circIfIndex=[integer], pduLspId=[opaque], pduOriginatingBufferSize=[integer],ifName=[string])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/6/SLOTUSERONLINERESUME: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.4The number of online users on the service board fell below 90% ofthe threshold. (entPhysicalName=[string], Threshold=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/OPTICALINVALIDRESUME: OID1.3.6.1.4.1.2011.5.25.219.2.4.6The optical module resumed from total failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136199)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/OPTICALINVALID: OID1.3.6.1.4.1.2011.5.25.219.2.4.5The optical module failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136202)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/CHASSISFAIL: OID 1.3.6.1.4.1.2011.5.25.219.2.1.3 The chassis failed partially. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=131328, EntityOperStatus=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/POWERINVALIDRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.5.6The power module resumed from total failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136967)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/POWERFAIL: OID 1.3.6.1.4.1.2011.5.25.219.2.5.3The power module partially failed. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136706)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/CARDINVALID: OID 1.3.6.1.4.1.2011.5.25.219.2.3.5The card totally failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=135434)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/BOARDINVALID: OID 1.3.6.1.4.1.2011.5.25.219.2.2.5The board totally failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=132632)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/FANFAILRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.6.4The fan resumed from partial failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=137472)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/CHASSISINVALIDRESUME 1.3.6.1.4.1.2011.5.25.219.2.1.6 The chassis recovered from total failure. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=131585)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/SYSTEMCONFIGERROR: OID 1.3.6.1.4.1.2011.5.25.219.2.11.1The system configuration is incorrect. (EntityTrapFaultID=144130)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/POWERINVALID: OID1.3.6.1.4.1.2011.5.25.219.2.5.5 The power module totally failed. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136962)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/UNSTABLERESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.10.12The physical entity was installed stably. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer],EntityTrapFaultID=143360)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/TEMPRISINGRESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.2.2 Temperature resumed from exceeding the upper prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseThresholdType=1, BaseThresholdEntityPhysicalIndex=[ULONG],BaseTrapSeverity=6,BaseTrapProbableCause=70656, BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=2, HighWarning=[ULONG], HighCritical=[ULONG])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/VOLTRISINGRESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.2.10 Voltage resumed from exceeding the upper prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseThresholdType=3, BaseThresholdEntityPhysicalIndex=[ULONG],BaseTrapSeverity=4, BaseTrapProbableCause=72704, BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=5, HighWarning=[ULONG], HighCritical=[ULONG])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/CARDFAIL: OID 1.3.6.1.4.1.2011.5.25.219.2.3.3The card partially failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=135170)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/LCDINVALID: OID 1.3.6.1.4.1.2011.5.25.219.2.7.3The LCD failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=139776)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/BOARDINVALIDRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.2.6The board resumed from total failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer],EntityTrapFaultID=132630)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/UNSTABLEALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.11The physical entity was installed unstably. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=[STRING], EntityType=[integer], EntityTrapFaultID=143360)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NE5KQOS/4/RULE_NOT_SUPPORT: OID: [oid], On the[direction] direction, The slot [slot] does not support([rule]) rule.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/FANINVALIDRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.6.6The fan module recovered. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=139268, EntityOperStatus=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/CARDINVALIDRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.3.6The card resumed from total failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer],EntityTrapFaultID=135433)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/VOLTFALLINGALARM: OID 1.3.6.1.4.1.2011.5.25.129.2.2.11 Voltage exceeded the lower prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseThresholdType=3, BaseThresholdEntityPhysicalIndex=[ULONG], BaseTrapSeverity=1,BaseTrapProbableCause=73218, BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=5, LowCritical=[ULONG], LowWarning=[ULONG])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/TEMPRISINGALARM: OID 1.3.6.1.4.1.2011.5.25.129.2.2.1 Temperature exceeded the upper prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseThresholdType=1, BaseThresholdEntityPhysicalIndex=[ULONG], BaseTrapSeverity=5,BaseTrapProbableCause=70657,BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=2, HighWarning=[ULONG], HighCritical=[ULONG])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/BOARDFAIL:OID [oid]Board become failure for some reason.(Index=[index], EntityPhysicalIndex=[entityphysicalindex],PhysicalName=\"[physicalname]\", EntityTrapEntType=[traptype], EntityTrapFaultID=[faultid])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/CARDREMOVE: OID 1.3.6.1.4.1.2011.5.25.219.2.3.1The card was removed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=133376)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/USERDEFRESUM: OID 1.3.6.1.4.1.2011.5.25.219.2.13.2 The user-defined alarm was cleared. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", UserDefAlarmName=\"[STRING]\",UserDefChannel=[integer])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/TEMPRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.10.2Ambient temperature became normal. (EntityPhysicalIndex=[integer],EntityThresholdType=[integer], EntityThresholdValue=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=140544)",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/BOARDFAILRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.2.4 The board resumed from partial failure. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=132101)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/CHASSISFAILRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.1.4The chassis resumed from partial failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=131333)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/BRDTEMPALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.13The board temperature exceeded the upper limit. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityThresholdType=[integer],EntityThresholdWarning=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=143617)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/BRDTEMPALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.13The board temperature exceeded the upper limit. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityThresholdType=[integer],EntityThresholdWarning=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=143616)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/OPTICALFAIL: OID 1.3.6.1.4.1.2011.5.25.219.2.4.3The optical module partially failed. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=135936)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/PHYSICALPORTDOWN: OID 1.3.6.1.4.1.2011.5.25.219.2.12.1The physical status of the port changed to Down. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\",EntityTrapFaultID=144384, PortDownReason=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/GATEALARM: OID [oid] Gate alarm. (EntityPhysicalIndex=[integer],  EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=[integer])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/CHASSISINVALID:OID 1.3.6.1.4.1.2011.5.25.219.2.1.5 The chassis totally failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=131586)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NE5KQOS/4/ACTION_NOT_SUPPORT: OID: [oid], Onthe [direction] direction, The slot [slot] does notsupport [action] action.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/SYSTEMCONFIGRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.11.2The system configuration is restored. (EntityTrapFaultID=144130)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/LCDREMOVE: OID 1.3.6.1.4.1.2011.5.25.219.2.7.1The LCD was removed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=139520)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/LCDINSERT: OID 1.3.6.1.4.1.2011.5.25.219.2.7.2The LCD was installed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=139520)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/BOARDREMOVE: OID 1.3.6.1.4.1.2011.5.25.219.2.2.1 The board was removed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=131840)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/POWERFAILRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.5.4The power module resumed from partial failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136704)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/VOLTFALLINGRESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.2.12 Voltage resumed from exceeding the lower prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseThresholdType=3, BaseThresholdEntityPhysicalIndex=[ULONG],BaseTrapSeverity=4, BaseTrapProbableCause=73216, BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=5, LowCritical=[ULONG], LowWarning=[ULONG])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/HUMIDITYRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.10.4Ambient humidity resumed from abnormal status. (EntityPhysicalIndex=[integer],EntityThresholdType=[integer], EntityThresholdValue=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=140801)",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/FANINVALID: OID 1.3.6.1.4.1.2011.5.25.219.2.6.5The fan module failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=139264, EntityOperStatus=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/HUMIDITYALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.3 Ambient humidity is abnormal. (EntityPhysicalIndex=[integer], EntityThresholdType=[integer], EntityThresholdValue=[integer], EntityThresholdCurrent=[integer], EntityTrapFaultID=140801)",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/4/USERONLINEALARM: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.1The number of online users on the device reached the threshold.(Threshold=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/FANFAIL: OID 1.3.6.1.4.1.2011.5.25.219.2.6.3The fan partially failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=137472)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/TEMPALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.1 Ambient temperature was abnormal. (EntityPhysicalIndex=[integer], EntityThresholdType=[integer], EntityThresholdValue=[integer], EntityThresholdCurrent=[integer], EntityTrapFaultID=140544)",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/4/ONLINEFAILALARM: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.6The number of session failure during a period reached the threshold.(Period=[integer], FailureNumber=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/4/RATEOFTRAFFICRISING: OID 1.3.6.1.4.1.2011.5.25.219.2.21.1Rate of traffic overrun. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=138240)",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/VOLTRISINGALARM: OID 1.3.6.1.4.1.2011.5.25.129.2.2.9 Voltage exceeded the upper prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseThresholdType=3, BaseThresholdEntityPhysicalIndex=[ULONG], BaseTrapSeverity=6,BaseTrapProbableCause=72705, BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=5, HighWarning=[ULONG], HighCritical=[ULONG])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/AUTOFTP: OID 1.3.6.1.4.1.2011.5.25.129.2.16.1 Auto download failed because of [STRING]. (BaseTrapSeverity= [integer]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/LCDINVALIDRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.7.4 The LCD resumed. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=139778)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/FOGALARM: OID [oid] Fog alarm. (EntityPhysicalIndex=[integer],  EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=[integer])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/OPTICALFAILRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.4.4The optical module resumed from partial failure. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=135936)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/GATERESUME: OID [oid] Gate alarm resumed. (EntityPhysicalIndex=[integer],  EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=[integer])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/4/ SLOTUSERONLINEALARM: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.3The number of online users on the service board reached the threshold.(entPhysicalName=[string], Threshold=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/POWERINSERT: OID 1.3.6.1.4.1.2011.5.25.219.2.5.2The power module was installed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136448)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/4/BOARDBECOMEMASTER: OID 1.3.6.1.4.1.2011.5.25.219.2.2.8The board changed to the master state. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer],EntityTrapFaultID=133120)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/CHASSISREMOVE: OID [oid] The chassis wasremoved. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=[integer])\"",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/4/SESSIONINVALIDALARM: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.7The number of tunnel with invalid session ID during a period reachedthe threshold. (Period=[integer], InvalidNumber=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/BOARDINSERT: OID 1.3.6.1.4.1.2011.5.25.219.2.2.2The board was installed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=131840)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/BRDTEMPRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.10.14The board temperature was restored to a normal value. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityThresholdType=[integer],EntityThresholdWarning=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=143617)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/4/USERDEFALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.13.1 The user-defined alarm has been detected. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", UserDefAlarmName=\"[STRING]\",UserDefChannel=[integer])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/VOLTALARM: OID [oid] Ambient voltage is abnormal. (EntityPhysicalIndex=[integer],  EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=[integer])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/PHYSICALPORTUP: OID 1.3.6.1.4.1.2011.5.25.219.2.12.2The physical status of the port changed to Up. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\",EntityTrapFaultID=144384)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/FANREMOVE: OID 1.3.6.1.4.1.2011.5.25.219.2.6.1The fan module was removed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=137216)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "MFLP/3/LINK_UNBLOCK:OID [OID] The main interface hasbeen unblocked due to MAC-Flapping association. (Vsi Name=[OCTET],AC Interface Name=[OCTET], Link-blocked Interface Name=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/VOLTFALLINGALARM: OID 1.3.6.1.4.1.2011.5.25.129.2.2.12 Voltage resumed from exceeding the lower prealarm limit. (EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG],BaseThresholdType=3, BaseThresholdEntityPhysicalIndex=[ULONG], BaseTrapSeverity=1, BaseTrapProbableCause=73218, BaseTrapEventType=6, EntPhysicalName=[STRING], BaseThresholdValue=[ULONG], BaseThresholdUnit=5, LowCritical=[ULONG], LowWarning=[ULONG])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/FANINSERT: OID 1.3.6.1.4.1.2011.5.25.219.2.6.2The fan module was installed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=137216, EntityOperStatus=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/6/USERONLINERESUME: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.2The number of online users on the device fell below 90% of the threshold.(Threshold=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/COMMUNICATERESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.9.2The communication channel resumed. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=140288, CommunicateType=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/POWERREMOVE: OID 1.3.6.1.4.1.2011.5.25.219.2.5.1The power module was removed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136448)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/BRDTEMPFATALALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.15The board temperature exceeded the fatal limit. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\",EntityThresholdType=[integer], EntityThresholdCritical=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=143872)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/BOARDLEAVEMASTER: OID 1.3.6.1.4.1.2011.5.25.219.2.2.7The board exited from the master state. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer],EntityTrapFaultID=133120)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "MFLP/3/LINK_BLOCK:OID [oid] The main interface has beenblocked due to MAC-Flapping association. (Vsi Name=[OCTET], AC InterfaceName=[OCTET], Main Interface Name=[OCTET], Block Time=[GAUGE])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/VOLTRESUME: OID [oid] Ambient voltage resumed from abnormal status. (EntityPhysicalIndex=[integer],  EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=[integer])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/RATEOFTRAFFICRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.21.2 Rate of traffic back to normal level. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=138240)",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/CHASSISINSERT: OID [oid] The chassis wasinstalled. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=[integer])\"",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HASM/4/SOAPSVRTIMEOUTALARM: OID 1.3.6.1.4.1.2011.5.25.324.2.2.0.5The SOAP server does not respond. (ServerType = [INTEGER], SOAPServerAddress= [STRING])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/4/POWERINVALID: OID 1.3.6.1.4.1.2011.5.25.219.2.5.5The power module totally failed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityTrapFaultID=136976)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/CARDINSERT: OID 1.3.6.1.4.1.2011.5.25.219.2.3.2The card was installed. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityType=[integer], EntityTrapFaultID=133376)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/BRDTEMPFATALRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.10.16The board temperature was restored to a normal value. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=[STRING],EntityThresholdType=[integer], EntityThresholdCritical=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=143872)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/FOGRESUME: OID [oid] Fog alarm resumed.(EntityPhysicalIndex=[integer], EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/1/COMMUNICATEERROR: OID 1.3.6.1.4.1.2011.5.25.219.2.9.1The communication channel failed. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityType=[integer],EntityTrapFaultID=140288, CommunicateType=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/CHASSISINVALIDRESUME: OID 1.3.6.1.4.1.2011.5.25.219.2.1.6 The chassis recovered from total failure. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer], EntPhysicalName=\"[STRING]\", EntityTrapFaultID=131586)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCRLSUCCESSLDAP:OID[oid] get crl successfully with LDAP. (hwLdapIP=[hwldapip], hwLdapPort=[hwldapport], hwCrlAttribute=[hwcrlattribute], hwCrlDN=[hwcrldn], hwLdapVersion=[hwldapversion])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/2/PKIBACKRSAHRPFAIL:OID[oid] Backing up RSA key pair backup to the standby device failed. (KeyName=[keyname], KeyBit=[keybit])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKICACERTNEARLYEXPIRED:OID[oid] the CA certificate is nearly expired. (CACertIssuer=[issuer], CACertSubject=[subject], CACertStartTime=[starttime], CACertFinishTime=[finishtime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/3/PKIGETCERTFAILCMP:OID[oid] Requesting certificate through CMPv2 failed. (hwCMPUrl=[cmpurl], hwCMPName=[cmpname], CmpSessionName=[sessionname])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCRLFAILHTTP:OID[oid] get crl unsuccessfully with HTTP. (CrlUrl=[crlurl])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/5/PKIUPDATELOCALCERTSUCCESSCMP: OID [OID] Updating the local certificate through CMPv2 succeeded. (LocalCertIssuer=[LocalCertIssuer], LocalCertSubject=[LocalCertSubject], NewLocalCertStartTime=[NewLocalCertStartTime], NewLocalCertFinishTime=[NewLocalCertFinishTime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCERTSUCCESSHTTP:OID[oid] get certificate successfully with HTTP. (CertUrl=[certurl], CertSaveName=[certsavename])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKICRLNEARLYEXPIRED:OID[oid] the crl is nearly expired. (CrlIssuer=[crlissuer], CrlStartTime=[crlstarttime],CrlFinishTime=[crlfinishtime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIUPDATELOCALCERTFAILCMP: OID [OID] Updating the local certificate through CMPv2 failed. (LocalCertIssuer=[LocalCertIssuer], LocalCertSubject=[LocalCertSubject])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/3/PKIGETCERTFAILSCEP:OID[oid] Requesting certificate through SCEP failed. (hwSCEPUrl=[scepurl], PkiRealmName=[realmname])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCERTFAILLDAP:OID[oid] get certificate unsuccessfully with LDAP. (hwLdapIP=[ldapip], hwLdapPort=[ldapport], hwCertAttribute=[certattribute], hwCertDN=[certdn], hwLdapVersion=[ldapversion], hwCertSaveName=[certsavename])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "RDS/4/RDACCTUP_WARNING:OID [oid] Communication with the RADIUS accounting server is resumed. (IP=[ip-address], Vpn-Instance:[vpn-instance-name])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/2/PKILOCALCERTINVALID:OID[oid] the local certificate is invalid. (LocalCertIssuer=[issuer], LocalCertSubject=[subject], LocalCertStartTime=[starttime], LocalCertFinishTime=[finishtime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCERTSUCCESSSCEP:OID[oid] Requesting certificate through SCEP succeeded.(hwSCEPUrl=[scepurl], PkiRealmName=[realmname])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "RDS/4/RDAUTHUP_WARNING:OID [oid] Communication with the RADIUS authentication server is resumed. (IP=[ip-address], Vpn-Instance:[vpn-instance-name])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKILOCALCERTNEARLYEXPIRED:OID[oid] the local certificate is nearly expired. (LocalCertIssuer=[issuer], LocalCertSubject=[subject], LocalCertStartTime=[starttime], LocalCertFinishTime=[finishtime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCRLSUCCESSHTTP:OID[oid] get crl successfully with HTTP. (CrlUrl=[crlurl])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/2/PKICACERTINVALID:OID[oid] the CA certificate is invalid. (CACertIssuer=[issuer], CACertSubject=[subject], CACertStartTime=[starttime], CACertFinishTime=[finishtime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCRLFAILSCEP: OID [OID] get crl unsuccessfully with SCEP. (CrlUrl=[CrlUrl])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "RDS/4/RDAUTHDOWN_WARNING:OID [oid] Communication with the RADIUS authentication server is interrupted. (IP=[ip-address], Vpn-Instance:[vpn-instance-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIUPDATELOCALCERTFAILSCEP: OID [OID] Updating the local certificate through SCEP failed. (LocalCertIssuer=[LocalCertIssuer], LocalCertSubject=[LocalCertSubject])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCERTSUCCESSLDAP:OID[oid] get certificate successfully with LDAP. (hwLdapIP=[ldapip], hwLdapPort=[ldapport], hwCertAttribute=[certattribute], hwCertDN=[certdn], hwLdapVersion=[ldapversion], hwCertSaveName=[certsavename])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCRLFAILLDAP:OID[oid] get crl unsuccessfully with LDAP. (hwLdapIP=[ldapip], hwLdapPort=[ldapport], hwCrlAttribute=[crlattribute], hwCrlDN=[crldn], hwLdapVersion=[ldapversion])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/5/PKIGETCRLSUCCESSSCEP: OID [OID] get crl successfully with SCEP. (CrlUrl=[CrlUrl])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCERTSUCCESSCMP:OID[oid] Requesting certificate through CMPv2 succeeded. (hwCMPUrl=[cmpurl], hwCMPName=[cmpname], CmpSessionName=[sessionname])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/4/PKIGETCERTFAILHTTP:OID[oid] get certificate unsuccessfully with HTTP. (CertUrl=[certurl], CertSaveName=[certsavename])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "RDS/4/RDACCTDOWN_WARNING:OID [oid] Communication with the RADIUS accounting server is interrupted. (IP=[ip-address], Vpn-Instance:[vpn-instance-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/2/PKICRLINVALID:OID[oid] the crl is invalid. (CrlIssuer=[crlissuer], CrlStartTime=[crlstarttime], CrlFinishTime=[crlfinishtime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PKI/5/PKIUPDATELOCALCERTSUCCESSSCEP: OID [OID] Updating the local certificate through SCEP succeeded. (LocalCertIssuer=[LocalCertIssuer], LocalCertSubject=[LocalCertSubject], NewLocalCertStartTime=[NewLocalCertStartTime], NewLocalCertFinishTime=[NewLocalCertFinishTime])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HARDDISK/2/FAILUREALAM:OID [oid] Disk [disk-id] will fail. (asc= [asc-number], ascq= [ascq-number], SN= [sn-number])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/4/ENTITYLEAVEMASTER: OID [oid] Physical entity exited from the master state.(Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER], EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\", RelativeResource=\"[OCTET]\",ReasonDescr=\"[OCTET]\")",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYONLINE: OID 1.3.6.1.4.1.2011.5.25.129.2.1.14 Physical entity changes to the online state. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4, BaseTrapProbableCause=69131, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"[STRING]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/6/HARDDISKFULLRESUME: [oid] The hard disk'susage fell below the alarm-clearing threshold. (DiskType=[disk-type], SN=[disk-sn], DiskUsage=[disk-usage], ResumeThreshold=[resume-threshold])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/ENTITYOFFLINE:OID 1.3.6.1.4.1.2011.5.25.129.2.1.13 Physical entity changed to the offline state. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=3, BaseTrapProbableCause=69122, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Because of The interface board board with FAP VA is not supported in multi-chassis system, the entity of LPU <slotID> changed to offline state\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/4/LICENSEFILELOSE:oidLicense file [license-file-name] is lost.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYRESETDONE:OID 1.3.6.1.4.1.2011.5.25.129.2.1.6Physical entity resetting ended. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4,BaseTrapProbableCause=66572, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Becauseof PIC<picID> ROMA register error, the entity of LPU<slotID>is resetting , not ready, Resume\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/FRAG6_SESS_BELOW_TRAP: OID [oid] The totalnumber of IPv6 fragment sessions on SPU [hwSecStatTrapSlot]CPU [hwSecStatTrapCPU] is [hwSecStatFrag6SessCount],lower than threshold value [hwSecStatFrag6SessThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/ENTITYRESET:OID 1.3.6.1.4.1.2011.5.25.129.2.1.5Physical entity reset. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4,BaseTrapProbableCause=66563, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING],ReasonDescription=\"Becauseof MAC address number error, the entity of LPU<slotID> is resetting, not ready\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYINSERT: OID 1.3.6.1.4.1.2011.5.25.129.2.1.2Physical entity is inserted. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4,BaseTrapProbableCause=65537, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/6/ENTITYRESUME: OID [oid] Physical entity recovered from a failure. (Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER] , EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\", RelativeResource =\"[OCTET]\",ReasonDescr=\"[OCTET]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NEM/4/NEM_ADDRESS_OVER:OID [OID] The number of used addresses is exceeding the threshold. vsysname:[OCTET], vtname:[OCTET], used-num:[GAUGE], threshold:[GAUGE].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/FRAG_SESS_BELOW_TRAP: OID [oid] The totalnumber of fragment sessions on SPU [hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatFragSessCount], lowerthan threshold value [hwSecStatFragSessThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTITYEXT/2/TRAP:[oid] The [process-name] function had exception, please contact technical support.",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/MEMORYUSAGE:[oid] Entity[index]: The entity memory is overload([current-memory-usage] > [memory-usage-threshold], MemoryTotalSize=[memory-total]KB).",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "APT_CIS/6/APTCISTHREATLOGLESSTRAP: [oid] Thenumber of threat logs fall to be lower than the threshold.(threatlog = [threat-log], threshold = [threshold], slot number= [slot-number], cpu number = [cpu-number])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/MONITOR_TABLE_OVER: [OID] Total numberof traffic policy monitor table on SPU [slot-id] CPU [cpu-id] is [monitor-table-count], exceeding threshold value [monitor-table-threshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/ENTITYUNSTABLE: OID 1.3.6.1.4.1.2011.5.25.129.2.1.3 Physical entity is unstable. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4, BaseTrapProbableCause=66048, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTCOMMUNICATERESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.1.8Communication-chanel is detected resumed from failure. (EntityPhysicalIndex=[ULONG],BaseTrapSeverity=2, BaseTrapProbableCause=67078, BaseTrapEventType=5,EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING], RelativeResource=[STRING],ReasonDescription=\"Between LPU<slotID> and SFU, The communicationchannel of loopback heart channel<channelID> is failed\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/ENTCOMMUNICATEERROR:OID 1.3.6.1.4.1.2011.5.25.129.2.1.7Communication-chanel is detected failed. (EntityPhysicalIndex=[ULONG],BaseTrapSeverity=3, BaseTrapProbableCause=67076, BaseTrapEventType=5,EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING], RelativeResource=[STRING],ReasonDescription=\"Between slave chassis and master chassis clk <slotID>,The communication channel of BITS2 is failed\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/GROUPCARSESSIONOVER: [OID] The currentsession count of some CAR policies exceeds the group IPCAR threshold.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/ENTITYBRDTEMPALARM:OID 1.3.6.1.4.1.2011.5.25.219.2.10.13Temperature rise over or fall below the warning alarm threshold. (Index=[integer],EntityPhysicalIndex=[integer], PhysicalName=\"[STRING]\", EntityThresholdType=[integer],EntityThresholdValue=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=143617)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/CPUSESSRATETRAP: [oid] The rate of creatingsessions on SPU[hwSecStatSessTrapSlot] CPU[hwSecStatSessTrapCPU] is [hwSecStatSessRateTrapCount], lower than threshold value[hwSecStatSessRateTrapThreshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/SESSIONLIMIT: [oid] Session creation controlended. The SPU[slot-id] CPU[cpu-id] usage was [value]%. In the process, [permit-num] packets were permitted and[bolck-num] packets were blocked.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/FASTSESSTRAP: [oid] Total number of sessionson LPU[hwSecStatSessTrapSlot] CPU[hwSecStatSessTrapCPU] is [hwSecStatSessTrapCount], exceeding threshold value [hwSecStatSessTrapThreshold].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/1/ENTITYINVALID: OID [oid] Physical entity failed. (EntityPhysicalIndex=[INTEGER], BaseTrapSeverity=[INTEGER], BaseTrapProbableCause=[INTEGER], BaseTrapEventType=[INTEGER], EntPhysicalContainedIn=[INTEGER], EntPhysicalName=\"[OCTET]\",RelativeResource=\"[OCTET]\", ReasonDescription=\"[OCTET]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/BLSOVERTHRES: [oid] Total number of black-list on SPU[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatBLSItemCount], exceeding threshold value [hwSecStatBLSItemThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/MEMORYUSAGERESUME:[oid] Entity [index]: The memory usage fell below the threshold(MemoryUsage=[current-memory-usage], MemoryUsageThreshold=[memory-usage-threshold], MemoryTotalSize=[memory-total]KB).",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/ENTITYBECOMEMASTER: OID 1.3.6.1.4.1.2011.5.25.129.2.1.12 Physical entity changed to the master state. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=2  BaseTrapProbableCause=68609, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Because of VRP Command, resetting or being pulled out etc., the entity of MPU10 changed to master state\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/SESSFASTAGINGTRAP: [oid] Total number ofsessions on SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSessRateTrapCount], lower than threshold value[hwSecStatSessRateTrapThreshold]. Session fast aging ends.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/ENTITYCHECKFAIL: OID 1.3.6.1.4.1.2011.5.25.129.2.1.15 Physical entity is deteced failed. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=6, BaseTrapProbableCause=69632, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING],RelativeResource=[STRING], ReasonDescription=\"Check LPU<slotID> PE QDR failed\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/2/EXPIRED:oidThe grace period of the[FeatureName] feature has expired, and the function is unavailable.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/ENTITYINSERT: OID 1.3.6.1.4.1.2011.5.25.129.2.1.2 Physical entity inserted. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4, BaseTrapProbableCause=65541, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/FRAG_SESS_OVER_TRAP: OID [oid] The totalnumber of fragment sessions on SPU [hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatFragSessCount], exceedingthreshold value [hwSecStatFragSessThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USER/4/USER_OVER_THRESHOLD:OID [OID] The number of online users of the virtual gateway is exceeding the threshold. vsysname:[OCTET], vtname:[OCTET], online-num:[GAUGE], threshold:[GAUGE].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DDOS_ZONE/4/BEGIN:OIDoidDDOS Attack Begin (AttackType:[hwSecDDOSAttackType], ZoneID:[hwSecDDOSZoneId], ZoneName:[hwSecDDOSZoneName], DestinationIP:[hwSecDDOSDstIP], BeginTime:[hwSecDDOSStartTime], DeviceType:[hwSecDDOSDeviceType])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DS/4/DATASYNC_CFGCHANGE:OID [OID] configurations havebeed changed. The current change number is [change-number], the changeloop count is [loop-count], and the maximum number of records is [max-number].",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/SESSIONLIMIT:[oid] Session creation controlstarted. The SPU[slot-id] CPU[cpu-id] usage was [value]%.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/CPUSESSTRAP: [oid] Total number of sessionson SPU[hwSecStatSessTrapSlot] CPU[hwSecStatSessTrapCPU] is [hwSecStatSessTrapCount], lower than threshold value[hwSecStatSessTrapThreshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/FASTSESSTRAP: [oid] Total number of sessionson LPU[hwSecStatSessTrapSlot] CPU[hwSecStatSessTrapCPU] is [hwSecStatSessTrapCount], lower than threshold value[hwSecStatSessTrapThreshold].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/GROUPCARSESSIONBELOW: [OID] The currentsession count of all CAR policies is below the group IPCAR threshold.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/4/STORAGEUTILIZEALARM: OID 1.3.6.1.4.1.2011.5.25.129.2.6.1Physical entity failed.(EntityPhysicalIndex=[ULONG], BaseTrapSeverity=3,BaseTrapProbableCause=75266, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Resourceallocation for PBT-SI on LPU[ULONG] is failed, hardware resourceswere exhausted (ID=[ULONG],Total=[ULONG],Type=[STRING])\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/2/LPUPLUGOUT: [oid] The LPU was pulledout. (Slot=[slot-id])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/2/ENTUNSTATBLE: OID [oid] Physical entity is inserted. (Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER], EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NEM/4/NEM_ADDRESS_BELOW:OID [OID] The number of used addresses fell below the threshold. vsysname:[OCTET], vtname:[OCTET], used-num:[GAUGE], threshold:[GAUGE].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VRRP/2/VRRPMASTERDOWN:OID [oid] The state ofVRRP changed from master to other state.(VrrpIfIndex=[INTEGER], VrId=[INTEGER],IfIndex=[INTEGER], IPAddress=[IPADDR], NodeName=[STRING], IfName=[STRING],CurrentState=[INTEGER], ChangeReason=[OCTET])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/GROUPCARTRAFFICOVER: [OID] The currenttraffic of some CAR policies exceeds the group IPCAR threshold.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/SVRMAP6BELOWTRAP: [oid] Totalnumber of server-map6 table on SPU[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSvrMap6TableCount], lowerthan threshold value [hwSecStatSvrMap6TableThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HRPI/4/HRPBASECFG: [OID] The device is recoveringconfigurations from local cfg-file ([recovering-reason]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ACM/3/LOGOUT_FAILED:OID [oid] User logout failed.(username= [user-name], logoutIP = [ip-address], logoutTime =[logout-time], accessType = [access-type])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/6/ENTITYINSERT: OID [oid] Physical entity is inserted. (Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER], EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYCHECKRESUME: OID 1.3.6.1.4.1.2011.5.2 5.129.2.1.16 Physical entity is deteced resumed from failure. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4, BaseTrapProbableCause=69637, BaseTrapEventType= 5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=\"\", ReasonDescription=\"Check MPU <slotID> chassis ID confilict failed\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/4/WILLEXPIRED:oidThe license will expired,[RemainTime] day(s) remaining.",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/4/ENTITYREMOVE: OID [oid] Physical entity is removed. (Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER], EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ACM/3/LOGIN_FAILED:OID [oid] User login failed.(username= [user-name], loginIP = [ip-address], loginTime = [login-time], accessType = [access-type], userLevel = [user-level])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/CPUUSAGE:[oid] Entity [index]: The [cpu_name] CPU is overload.([current-cpu-usage] >= [cpu-usage-threshold]).",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTITYEXT/2/CPUOVERINTERFACEDOWN:[oid] Entity [index]:  The dataplane cpu-usage reached the threshold set forinterface management, and the interface was shut down.(SlotID = [slot-id], CpuID = [cpu-id]).",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/SESSFASTAGINGTRAP: [oid] Total number ofsessions on SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSessRateTrapCount], exceeding threshold value[hwSecStatSessRateTrapThreshold]. Session fast aging begins.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/ENTITYREGFAIL: OID 1.3.6.1.4.1.2011.5.25.129.2.1.17Physical entity register failed. (EntityPhysicalIndex=[integer], BaseTrapSeverity=2,BaseTrapProbableCause=70145, BaseTrapEventType=5, EntPhysicalContainedIn=[integer],EntPhysicalName=[octet], RelativeResource=[STRING], ReasonDescription=\"LPU<slotID>Card<cardID> register failed\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/4/ENTITYRESETDONE:OID 1.3.6.1.4.1.2011.5.25.129.2.1.6Physical entity resetting ended. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4, BaseTrapProbableCause=66578, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Becauseof task exception occurs | task deadloop occurs | task hungry occurs| system resource error, the entity of LPU1 is resetting, not ready\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/6/HARDDISKPLUGIN: [oid] The hard diskwas plugged in. (DiskType=[disk-type], SN=[disk-sn],DiskIndex=[disk-id])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYREGSUCCESS: OID 1.3.6.1.4.1.2011.5.25.129.2.1.18 Physical entity register succeeded. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=2, BaseTrapProbableCause=70147, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"FAN<slotID>\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/4/GRACE:oidThe [FeatureName] featurehas expired, [GracePeriodTime] day(s) of graceperiod remaining.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/HARDDISKOFFLINE: [oid] The hard diskwent offline. (DiskType=[disk-type], SN=[disk-sn], DiskIndex=[disk-id])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/ENTITYLEAVEMASTER: OID 1.3.6.1.4.1.2011.5.25.129.2.1.11 Physical entity exited from the master state. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=2, BaseTrapProbableCause=68608, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Because of VRP Command,resetting or being pulled out etc., the entity of MPU9 changed to standby\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/CPUUSAGERESUME:[oid] Entity [index]: The [cpu_name] CPU usage fell below the threshold. (CpuUsage=[current-cpu-usage] , CpuUsageThreshold=[cpu-usage-threshold])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/PORTPHYSICALUP:[oid] Physical stateof the port changes to up. (EntityPhysicalIndex=[EntityPhysicalIndex], BaseTrapSeverity=[BaseTrapSeverity], BaseTrapProbableCause=[BaseTrapProbableCause], BaseTrapEventType=[BaseTrapEventType], EntPhysicalName=\"[EntPhysicalName]\", EntityOperStatus=[EntityOperStatus], EntityAdminStatus=[EntityAdminStatus])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/ENTITYREMOVE: OID 1.3.6.1.4.1.2011.5.25.129.2.1.1 Physical entity is removed. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=1, BaseTrapProbableCause=65538, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG], EntPhysicalName=\"CFCARD(CFCARD2)\",RelativeResource=[STRING], ReasonDescription=\"MPU%s CFCARD(CFCARD2) is pulled out\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ACM/4/LOGIN_SUCCEED:OID [oid] User login succeed.(username= [user-name], loginIP = [ip-address], loginTime = [login-time], accessType = [access-type], userLevel = [user-level])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/IPv6SESSFASTAGINGTRAP: [oid] Total numberof IPv6 sessions on SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSessRateTrapCount], lower than threshold value[hwSecStatSessRateTrapThreshold]. IPv6 Session fast aging ends.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/6/LPUPLUGIN: [oid] The LPU was pluggedin. (Slot=[slot-id])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/ENTITYINVALID: OID [oid] Physical entity failed. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=[INTEGER], BaseTrapProbableCause=[INTEGER], BaseTrapEventType=[INTEGER], EntPhysicalContainedIn=[ULONG], EntPhysicalName=[STRING],RelativeResource=[STRING], ReasonDescription=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/STORAGEUTILIZERESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.6.2Storage utilization resumed from exceeding the prealarm threshold.(EntityPhysicalIndex=[ULONG], EntityPhysicalIndex=[ULONG], BaseUsageType=6,BaseUsageIndex=[ULONG], BaseTrapSeverity=3, BaseTrapProbableCause=75266,BaseTrapEventType=5, EntPhysicalName=\"LPU Board [ULONG]\", RelativeResource=\"TCAM(ID=[ULONG],User=[STRING])\",BaseUsageValue=[ULONG], BaseUsageUnit=[ULONG], BaseUsageThreshold=[ULONG])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/2/HDA1ERROR: [oid] An error occurred in the file system. This error does not affectthe running of basic services, but the configuration file may notbe saved or the log function may be disabled. Contact Huawei technicalsupport personnel to fix the error and clear the alarm.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/6/HARDDISKONLINE: [oid] The hard diskwent online successfully. (DiskType=[disk-type], SN=[disk-sn], DiskIndex=[disk-id])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "UM/4/ONLINEUSEROVERTHRESHOLD: OID [OID] The resourceusage of online user monitoring table reached the threshold([current-usage] >= [usage-threshold]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/1/CPUUTILIZATIONALARM: OID 1.3.6.1.4.1.2011.5.25.129.2.4.1Physical entity CPU utilization exceeded the prealarm threshold. (EntityPhysicalIndex=[integer],EntityPhysicalIndex=[integer], BaseUsageType=1, BaseUsageIndex=[integer],BaseTrapSeverity=2, BaseTrapProbableCause=74240, BaseTrapEventType=5,EntPhysicalName=[STRING], RelativeResource=[STRING], BaseUsageValue=[integer],BaseUsageUnit=1, BaseUsageThreshold=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "APT_CIS/3/APTCISTHREATLOGOVERTRAP: [oid] Thenumber of threat logs exceed to be more than the threshold.(threatlog = [threat-log], threshold = [threshold], slot number= [slot-number], cpu number = [cpu-number])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/CPUVCPUALMTRAP: [oid] Physical entity CPUutilization of Board[hwSecStatTrapBoardType] SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] Vcpu1-[hwSecStatPerfTrapVcpu] is [hwSecStatPerfTrapCpuUsage], lower than the threshold[hwSecStatPerfTrapCpuThreshold] corresponding to the upperlimit of the threshold.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HRPI/6/DEVICEIDOK: [OID] HRP link changes to[link-state]. Local device ID is [local-id], peer deviceID is [peer-id].",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "UM/6/ONLINEUSEROVERTHRESHOLDRECOVER: OID [OID] The resource usage of online user monitoring table fell below thethreshold ([current-usage] < [usage-threshold]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMPADAPT/4/UPDATE_FAIL: OID [oid] Failed toupdate database.(Module= [module-name], Pre-UpdateVersion=[pre-version], UpdateVersion= [version], ErrorCode=[err-code])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/IPCARTRAFFICBELOW: [OID] VSYS [vsys-name] IP Address [ip-address] in ZONE [zone-name] PEAKRATE [peak-rate]kbps current traffic below CAR policy [policy-name] CAR class [profile-name] threshold [bandwidth-threshold]kbps.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/RESERVEDALARMFIFTH: [OID] The devicewas faulty.(5): [alarm-info].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/2/PORTPHYSICALDOWN: [oid] Physical stateof the port changed to down. (EntityPhysicalIndex=[EntityPhysicalIndex], BaseTrapSeverity=[BaseTrapSeverity], BaseTrapProbableCause=[BaseTrapProbableCause], BaseTrapEventType=[BaseTrapEventType], EntPhysicalName=\"[EntPhysicalName]\", PortPhysicalDownReason=\"[PortPhysicalDownReason]\", EntityOperStatus=[EntityOperStatus], EntityAdminStatus=[EntityAdminStatus])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSTRAP/4/THREATTRAP:[oid] 1.3.6.1.4.1.2011.6.122.43.1.2.8An intrusion was detected. (SrcIp=[source-ip], DstIp=[destination-ip], SrcPort=[source-port], DstPort=[destination-port], Protocol=[protocol], Event=[event], DetectTime=[date])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/6/ENTITYBRDTEMPRESUME:OID 1.3.6.1.4.1.2011.5.25.219.2.10.14Temperature back to normal level.(Index=[integer], EntityPhysicalIndex=[integer],EntPhysicalName=\"[STRING]\", EntityThresholdType=[integer], EntityThresholdValue=[integer],EntityThresholdCurrent=[integer], EntityTrapFaultID=143617)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DDOS_ZONE/6/END:OIDoidDDOS AttackEnd (AttackType:[hwSecDDOSAttackType], ZoneID:[hwSecDDOSZoneId], ZoneName:[hwSecDDOSZoneName], DestinationIP:[hwSecDDOSDstIP], EndTime:[hwSecDDOSEndTime], DeviceType:[hwSecDDOSDeviceType])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "POLICY/4/IPSPULLOUT:[oid] 1.3.6.1.4.1.2011.6.122.43.3.2.1 The function of application/url recognition and content security detection is not available, because the IPS card has been pulled out.(slot=[slotid], cpu=[cpuid])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYRESUME: OID [oid] Physical entity is detected resumed from failure. (EntityPhysicalIndex=[integer], BaseTrapSeverity=[integer], BaseTrapProbableCause=[integer], BaseTrapEventType=[integer], EntPhysicalContainedIn=[integer],EntPhysicalName=\"[STRING]\", RelativeResource=\"[STRING]\", ReasonDescription=\"[STRING]\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/MEMALMTRAP: [oid] The utilization of Board[hwSecStatTrapBoardType] SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] memory[hwSecStatPerfTrapMemType] is[hwSecStatPerfTrapMemUsage], exceeded the upper limit of thethreshold[hwSecStatPerfTrapMemThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYREGFAIL: OID 1.3.6.1.4.1.2011.5.25.129.2.1.18Physical entity register succeeded. (EntityPhysicalIndex=[integer],BaseTrapSeverity=2, BaseTrapProbableCause=70145, BaseTrapEventType=5,EntPhysicalContainedIn=[integer], EntPhysicalName=[octet], RelativeResource=[STRING],ReasonDescription=\"LPU<slotID> Card<cardID> register failed\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/GROUPCARTRAFFICBELOW: [OID] The currenttraffic of all CAR policies is below the group IPCAR threshold.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/EMEFWDTIMEOUTWARNING:OID[oid] Emergency bypass will be disabled  in [warning-time] minutes,reaching 80% of the maximum execution time ([total-time] minutes).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LLDP/4/LLDPENBLD: [oid] LLDP is globally enabled.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HRPI/1/DEVICEID: [OID] HRP link changes to [link-state].Local device ID is [local-id], peer deviceID is [peer-id].",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/MEMALMTRAP: [oid] The utilization of Board[hwSecStatTrapBoardType] SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] memory[hwSecStatPerfTrapMemType] is[hwSecStatPerfTrapMemUsage], lower than the threshold [hwSecStatPerfTrapMemThreshold] corresponding to the upper limit of the threshold.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMPADAPT/4/DATABASE_COMPILE: OID [oid] Compiler generated some warnings. Check user defined rules for details. (Module= [module-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/IPCARSESSIONOVER: [OID] The current sessioncount of some CAR policies exceeds the source IPCAR threshold.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/RESERVEDALARMTHIRD: [OID] The devicewas faulty.(3): [alarm-info].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HRPI/1/CORE_STATE: [OID] The HRP core state changeddue to [reason]. (old_state=[old-state], new_state=[new-state], local_priority=[local-priority], peer_priority=[peer-priority])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTITYEXT/4/CPUUSAGESUDDENCHANGE:[oid] Entity [index]: The CPU usage on SPU [slot-id] CPU [cpu-id] is suddenly changed from [previous-value]% to [current-value]%, and the change value is [change-value]%, exceeding thresholdvalue [change-value-threshold]%.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTITYEXT/4/MEMUSAGESUDDENCHANGE:[oid] Entity [index]: The memory usage on SPU [slot-id] CPU [cpu-id] is suddenly changed from [previous-value]% to [current-value]%, and the change value is [change-value]%, exceeding thresholdvalue [change-value-threshold]%.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/SVRMAP6OVERTRAP: [oid] Totalnumber of server-map6 table on SPU[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSvrMap6TableCount], exceedingthreshold value [hwSecStatSvrMap6TableThreshold].",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/SVRMAPBELOWTRAP:  [oid] Totalnumber of server-map table on SPU[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSvrMapTableCount], lowerthan threshold value [hwSecStatSvrMapTableThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/CPUVCPUALMTRAP: [oid] Physical entity CPUutilization of Board[hwSecStatTrapBoardType] SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] Vcpu1-[hwSecStatPerfTrapVcpu] is [hwSecStatPerfTrapCpuUsage], exceeded the threshold value[hwSecStatPerfTrapCpuThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/RESERVEDALARMFIRST: [OID] The devicewas faulty.(1): [alarm-info].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/6/ENTITYRESETDONE: OID [oid] Physical entity resetting ended. (Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER], EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\", RelativeResource=\"[OCTET]\", ReasonDescr=\"[OCTET]\")",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/HARDDISKFULL: [oid] The hard disk'sspare space is insufficient. (DiskType=[disk-type], SN=[disk-sn], DiskUsage=[disk-usage], ResumeThreshold=[resume-threshold])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/EMEFWDTIMEOUT:OID [oid] Emergency bypass has been disabled, and the total execution time is [total-time] minute(s).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/EMEDEFENDTIMEOUT:OID [oid] Emergency auto-defensehas been disabled, and the total execution time is [total-time] minutes.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/HDA1USAGE: [oid] Entityindex: The entity hda1 is overload(hda1-current-Usage>=hda1-Usage-Threshold).",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LLDP/4/LLDPDISABLED: [oid] LLDP is globally disabled.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/CPUSESSTRAP: [oid] Total number of sessionson SPU[hwSecStatSessTrapSlot] CPU[hwSecStatSessTrapCPU] is [hwSecStatSessTrapCount], exceeding threshold value [hwSecStatSessTrapThreshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTITYEXT/4/DEVCFGRECOVERED:[oid] Entity: Device configurationwas recovered.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_ENTITY/2/ENTITYBRDTEMPALARM: OID 1.3.6.1.4.1.2011.5.25.219.2.10.13Temperature rise over or fall below the warning alarm threshold. (Index=[integer],EntityPhysicalIndex=[integer], PhysicalName=\"[STRING]\", EntityThresholdType=[integer],EntityThresholdValue=[integer], EntityThresholdCurrent=[integer],EntityTrapFaultID=143619)",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/FRAG6_SESS_OVER_TRAP: OID [oid] The totalnumber of IPv6 fragment sessions on SPU [hwSecStatTrapSlot]CPU [hwSecStatTrapCPU] is [hwSecStatFrag6SessCount],exceeding threshold value [hwSecStatFrag6SessThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/6/MONITOR_TABLE_BELOW: [OID] Total numberof traffic policy monitor table on SPU [slot-id] CPU [cpu-id] is [monitor-table-count], lower than threshold value [monitor-table-threshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/IPCARTRAFFICOVER: [OID] VSYS [vsys-name] IP Address [ip-address] in ZONE [zone-name] PEAKRATE [peak-rate]kbps current traffic exceed CAR policy [policy-name] CAR class [profile-name] threshold [bandwidth-threshold]kbps.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYRESET:OID 1.3.6.1.4.1.2011.5.25.129.2.1.6Physical entity resetting ended. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=4,BaseTrapProbableCause=66566, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING], RelativeResource=[STRING], ReasonDescription=\"Becauseof startup version is different from the master ,the entity of MPU<slotID>is resetting ,not ready\")",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VRRP/2/VRRPNONMASTER:OID [oid] The state of VRRP changed between backup and Initialize state. (VrrpIfIndex=[VrrpIfIndex], VrId=[VrId], IfIndex=[IfIndex], IPAddress=[IPAddress], NodeName=[NodeName], IfName=[IfName], CurrentState=[CurrentState],ChangeReason=[ChangeReason])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/ENTITYUNSTABLERESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.1.4 Physical entity unstable resumed from unstability. (EntityPhysicalIndex=[ULONG], BaseTrapSeverity=6, BaseTrapProbableCause=66048, BaseTrapEventType=5, EntPhysicalContainedIn=[ULONG],EntPhysicalName=[STRING])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/HDA1USAGERESUME: [oid] Entityindex: The entity hda1 usage fell below the resume threshold(hda1Usage=hda1-current-Usage, hda1UsageResumeThreshold=hda1-Usage-Resume-Threshold).",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/SVRMAPOVERTRAP: [oid] Total number of server-maptable on SPU[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSvrMapTableCount], exceeding threshold value[hwSecStatSvrMapTableThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/IPv6SESSFASTAGINGTRAP: [oid] Total numberof IPv6 sessions on SLOT[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatSessRateTrapCount], exceeding threshold value[hwSecStatSessRateTrapThreshold]. IPv6 Session fast aging begins.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VRRP/1/VRRPAUTHFAILED:OID [oid] VRRP failed toauthentication.",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CONFIG/4/CONFIGCHANGE: OID [oid] The configuration has been changed. ( UserName=[UserName], TerminalIp=[TerminalIp], VsysName=[VsysName], ModuleType=[ModuleType], ModuleObject=[ModuleObject],Action=[Action], TargetObject=[TargetObject] )",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HRPI/1/COCHK: [OID] The configurations betweenactive and standby device is different ([different-configuration-name]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/2/HARDDISKPLUGOUT: [oid] The hard diskwas pulled out. (DiskType=[disk-type], SN=[disk-sn],DiskIndex=[disk-id])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/SESSIONCHANGE:[oid] The average number of sessions on SPU[slot-id] CPU[cpu-id] is suddenly changed from [previous-value] to [current-value], and the change rate is [change-radio] , exceedingthreshold value [change-value-threshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IICPACKET/4/CRCERRRESUME:[oid] Thepacket CRC check error has been fixed.(destination slot number: [slot-id], destination CPU number: [cpu-id]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/4/EMEDEFENDTIMEOUTWARNING:OID[oid] Emergencyauto-defense will be disabled in [warning-time] minutes, reaching 80% of the maximum execution time ([total-time] minutes).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/CPUSESSRATETRAP: [oid] The rate of creatingsessions on SPU [hwSecStatSessTrapSlot] CPU [hwSecStatSessTrapCPU] is [hwSecStatSessRateTrapCount], exceeding threshold value[hwSecStatSessRateTrapThreshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VRRP/2/VRRPCHANGETOMASTER:OID [oid] The statusof VRRP changed to master.(VrrpIfIndex=[INTEGER], VrId=[INTEGER],IfIndex=[INTEGER], IPAddress=[IPADDR], NodeName=[STRING], IfName=[STRING],ChangeReason=[OCTET])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SNMPADAPT/4/UPDATE_SUCCESS: OID [oid] Succeedin updating database. (Module= [module-name], Pre-UpdateVersion=[pre-version], UpdateVersion= [version])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USER/4/USER_BELOW_THRESHOLD:OID [OID] The number of online users of the virtual gateway fell below the threshold. vsysname:[OCTET], vtname:[OCTET], online-num:[GAUGE], threshold:[GAUGE].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/RESERVEDALARMSECOND: [OID] The devicewas faulty.(2): [alarm-info].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ACM/4/LOGOUT_SUCCEED:OID [oid] User logout succeed.(username= [user-name], logoutIP = [ip-address], logoutTime =[logout-time], accessType = [access-type])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IICPACKET/2/CRCERR:[oid] A packet CRC check erroroccurred.(destination slot number: [slot-id], destinationCPU number: [cpu-id]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BWM/4/IPCARSESSIONBELOW: [OID] The current sessioncount of all CAR policies is below the source IPCAR threshold.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LLDP/4/REMTABLECHANGE: [oid] Theremote table has changed. (RemTable sInserts=[new-neighbour-count], RemTablesDeletes=[delete-neighbour-count], RemTablesDrops=[discard-neighbour-count], RemTablesAge outs=[aged-neighbour-count]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BASETRAP/4/ENTITYRESET: OID [oid] Physical entity is reset. (Index=[INTEGER], Severity=[INTEGER], ProbableCause=[INTEGER], EventType=[INTEGER], ContainedIn=[INTEGER], PhysicalName=\"[OCTET]\", RelativeResource=\"[OCTET]\", ReasonDescription=\"[OCTET]\")",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/BLSBELOWTHRES:  [oid] Total number of black-list on SPU[hwSecStatTrapSlot] CPU[hwSecStatTrapCPU] is [hwSecStatBLSItemCount], lower than threshold value [hwSecStatBLSItemThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LLDP/4/LLDPLOCMAN: OID [oid] Local management addressis changed. (LldpLocManIpAddr=[IPADDRESS])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SRM_BASE/6/CPUUTILIZATIONRESUME: OID 1.3.6.1.4.1.2011.5.25.129.2.4.2Physical entity CPU utilization resumed from exceeding the prealarmthreshold. (EntityPhysicalIndex=[integer], EntityPhysicalIndex=[integer],BaseUsageType=1, BaseUsageIndex=[integer], BaseTrapSeverity=2, BaseTrapProbableCause=74240,BaseTrapEventType=5, EntPhysicalName=[STRING], RelativeResource=[STRING],BaseUsageValue=[integer], BaseUsageUnit=1, BaseUsageThreshold=[integer])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/RESERVEDALARMFOURTH: [OID] The devicewas faulty.(4): [alarm-info].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HWCM/4/CFGCHANGE:OID [oid] Configure changed. (EventIndex=[integer],CommandSource=[integer], ConfigSource=[integer], ConfigDestination=[integer])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/6/PATCH_INSTALL_FAIL_CLEAR:OID [oid] The patch-installation failure alarm is cleared. (SlotIndex=[INTEGER], PatchIndex=[GAUGE], PackageName=[STRING], PackageVersion=[STRING], FailReason=[INTEGER])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L3VPN/4/L3V_TRAP_MID_EXCEED:OID [oid] The number ofroutes in the VPN instance exceeded the middle threshold. (VpnInstanceName=[octet],VpnInstanceRouteCount=[gauge], MidThresholdValue=[gauge])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L3VPN/6/L3V_TRAP_THRE_CLEARED:OID [oid] The number ofroutes in the VPN instance fell below the maximum value. (VpnInstanceName=[octet],VPNInstanceRouteCount=[gauge], MaxValue=[gauge])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LDP/2/HWMPLSLDPHOSTINGRESSLSPDOWNCLEAR: OID [oid] TheDown trap of LDP ingress LSP for a specified FEC was cleared. (FEC=[IPADDR]/32)",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HWCM/4/HWCM_B2S_BACKUP:OID [oid] Began to back up the current configuration to the server.",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "SYSMIB/2/PATCH_INSTALL_FAIL:OID [oid] Patch package installation failed.(SlotIndex=[INTEGER], PatchIndex=[GAUGE], PackageName=[STRING], PackageVersion=[STRING], FailReason=[INTEGER])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LDP/4/PVLIMITMISMATCH:OID [oid] PVL mismatch betweenentities. (PVLimitValue=[threshold])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HWCM/2/RESTORE_CONFIGURATION_FAIL:OID [OID] Failed torestore system configurations.(ErrCode=[ErrorCode])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L3VPN/2/L3V_TRAP_THRE_EXCEED:OID [oid] Thenumber of routes in the VPN instance exceeded the maximum value. (VpnInstanceName=[octet],VPNInstanceRouteCount=[gauge], MaxValue=[gauge])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L3VPN/6/L3V_TRAP_VRF_UP:OID [oid] The interface boundto the VPN instance went Up. (VpnInstanceName=[octet], IfIndex=[integer],BindingVpnInstanceName=[octet], IfCurRowStatus=[integer], VRFOperationStatus=[integer],IfName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LDP/6/SESSIONUP:OID [OID] The session went Up. (LdpId=[OPAQUE], LdpEntityIndex=[GAUGE],PeerLdpId=[OPAQUE], PeerLdpId=[OPAQUE], IfIndex=[INTEGER], SessionState=[INTEGER],DiscontinuityTime=[TIMETICK], UnknownMesTypeErrors=[COUNTER], UnknownTlvErrors=[COUNTER],DownReason=[INTEGER], IfName=[STRING])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LACP/6/MNCR:OID [oid] Link negotiation failure is resumed. (TrunkIndex=[INTEGER], PortIfIndex=[INTEGER], TrunkId=[INTEGER], TrunkName=[OCTET], PortName=[OCTET])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LDP/2/HWMPLSLDPHOSTINGRESSLSPDOWN: OID [oid] The lastLDP ingress LSP for a specified FEC went Down. (FEC=[IPADDR]/32, DownReason=[INTEGER],DownNodeMplsLsrId=[IPADDR], OutIfIndex=[INTEGER], OutIfMainIp=[IPADDR],OutIfState=[INTEGER], DownstreamPeerLdpId=[OPAQUE])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LDP/2/SESSIONDOWN: OID [OID] The session went Down. (LdpId=[OPAQUE], LdpEntityIndex=[GAUGE], PeerLdpId=[OPAQUE], PeerLdpId=[OPAQUE], IfIndex=[INTEGER], SessionState=[INTEGER], DiscontinuityTime=[TIMETICK], UnknownMesTypeErrors=[COUNTER],UnknownTlvErrors=[COUNTER], DownReason=[INTEGER], IfName=[STRING])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L3VPN/2/L3V_TRAP_VRF_DOWN: OID [oid] The interfacebound to the VPN instance went Down. (VpnInstanceName=[octet], IfIndex=[integer],BindingVpnInstanceName=[octet], IfCurRowStatus=[integer], OperationStatus=[integer],IfName=[octet])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HWCM/4/CFGCOPY:OID [oid] Configure copy. (OperationIndex=[integer],OperationResultIndex=[integer], OperationType=[integer], OperationTime=[timetick],OperationState=[integer], OperationEndTime=[timetick])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L3VPN/4/L3V_TRAP_TUNNEL_UPDOWN_EVENT:OID [oid] The tunnelup/down event is occurred. (VpnIndex=[gauge], NextHop=[ipaddr], Ckey=[gauge],TrapType=[gauge])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "LDP/4/SSNTHRESHOLDEXCEED: OID [oid] The number of failuresin LDP session negotiation reached threshold. (LdpId=[OPAQUE], LdpEntityIndex=[GAUGE],Times=[INTEGER])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HWCM/4/HWCM_B2S_TRANSFAIL: OID [oid] Failed to transferthe configuration file to (index=[integer]) server [server-ip] through[transport-type] when automatically backing up the configuration.",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECREACHMAXTUNNELMAX: OID [OID] Current counts of ipsec tunnel has been reached max CPU limit or license li mit, please check it at once.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECTUNNELSTOP:OID[oid] The IPSec tunnel is deleted. (Ifindex=[Ifindex], SeqNum=[SeqNum],TunnelIndex=[TunnelIndex], RuleNum=[RuleNum], DstIP=[DstIP], InsideIP=[InsideIP], RemotePort=[RemotePort], CpuID=[CpuID], SrcIP=[SrcIP], FlowInfo=[FlowInfo], OfflineReason=[offlinereason], VsysName=[vsys-name], InterfaceName=[InterfaceName], SlotID=[SlotID])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/UNKNOW_DEVICE_INTERFERENCE: OID [oid] Jam of Other devices is detected.(APMAC=[OPAQUE], RadioID=[INTEGER],APName=[OCTET], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NHRP/4/NHRPPEERDELETE:OID[oid] NHRP peer is deleted.(Interface=[interface-name], protocol-address=[protocol-address], mask=[mask], next-hop=[next-hop-address], nbma-address=[nbma-address], type=[peer-type], reason=[delete-reason])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/AP_RADIO_DOWN:OID [oid] The radiochanges to down. (APMAC=[OPAQUE], ApName=[OCTET], event=[INTEGER],APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECRESETIKESA:OID[oid] Reset IKE SA.(VsysName=[vsys-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/RADIO_ENV_DETERIORATE:OID [oid] Radio signal environment deteriorates. (APMAC=[OPAQUE],RadioID=[INTEGER],APName=[OCTET], PER=[INTEGER]%, ConflictRate=[INTEGER]%, APID=[INTEGER])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/AP_WIRELESS_PORT_DOWN_RESTORE: OID [oid] AP radio down is recovered notify.(APMAC=[OPAQUE], RadioID=[INTEGER],APName=[OCTET], CauseId=[INTEGER], CauseStr=[OCTET], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/6/IPSECTUNNELSTART:OID[oid] The IPSec tunnel is established. (Ifindex=[Ifindex], SeqNum=[SeqNum],TunnelIndex=[TunnelIndex], RuleNum=[RuleNum], DstIP=[DstIP], InsideIP=[InsideIP], RemotePort=[RemotePort], CpuID=[CpuID], SrcIP=[SrcIP], FlowInfo=[FlowInfo], LifeSize=[LifeSize], LifeTime=[LifeTime], VsysName=[vsys-name], InterfaceName=[InterfaceName], SlotID=[SlotID], Role=[Role])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/VAP_REACH_MAX_USERS_RESTORE:OID[oid] VAP has the max number of stations notify restore.(APMAC=[OPAQUE],APName=[STRING], RADIOID=[INTEGER], WLANID=[INTEGER], FailCause=[INTEGER],CurrentNum=[INTEGER], APID=[INTEGER])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IKEREACHMAXPEER:OID[OID] Current counts of ike peer will reach max limit.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NHRP/4/NHRPHUBUP:OID[oid] NHRP hub is up. (Interface=[interface-name], protocol-address=[protocol-address],mask=[mask], next-hop=[next-hop-address], nbma-address=[nbma-address], type=[peer-type])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NHRP/4/NHRPHUBDOWN:OID[oid] NHRP hub is down. (Interface=[interface-name], protocol-address=[protocol-address], mask=[mask], next-hop=[next-hop-address], nbma-address=[nbma-address])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/SSID_CONFLICT_WEP_KEY:OID [oid] SSID Wep key conflict notify.(APMAC=[OPAQUE],WepIDConflictTrapAPMAC=[OPAQUE],WepIDConflictTrapAPName=[OCTET],WepIDConflictTrapRadioId=[INTEGER],WepIDConflictTrapPreSSID=[OCTET],WepIDConflictTrapCurrSSID=[OCTET],WepIDConflictTrapCipherIdx=[INTEGER],APID=[INTEGER])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECPOLICYDEL:OID[oid] An IPSec policy is deleted. (SeqNum=[sequence-number], PolicyName=[policy-name], VsysName=[vsys-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECNEGOFAIL:OID[OID] IPSec tunnel negotiation fails. (Ifindex=[Ifindex], SeqNum=[SeqNum], Reason=[Reason], ReasonCode=[ReasonCode], PeerAddress=[PeerAddress], PeerPort=[PeerPort], VsysName=[vsys-name], InterfaceName=[InterfaceName])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/UNKNOW_DEVICE_INTERFERENCE_RESTORE: OID [oid] Jam of Other devices is cleared.(APMAC=[OPAQUE], RadioID=[INTEGER],APName=[OCTET], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/AP_WIRELESS_PORT_DOWN: OID [oid] AP radio is down notify.(APMAC=[OPAQUE], RadioID=[INTEGER],APName=[OCTET], CauseId=[INTEGER], CauseStr=[OCTET], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECPOLICYDETACH:OID[oid] An IPSec policy is cancelled on an interface.(IfIndex=[interface-index], PolicyName=[policy-name], VsysName=[vsys-name], InterfaceName=[interface-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/:OID [oid] AP not support configured country code notify.(APMAC=[MacAddress],APName=[STRING], COUNTRY CODE=[OCTET], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/STA_ASSOCIATION_FAIL: OID [oid] Station association is failed notify.(APMAC=[OPAQUE],APMAC=[OPAQUE],RadioID=[INTEGER],StaMac=[OPAQUE],APName=[OCTET],StaAssocBssid=[OPAQUE],Ssid=[OCTET],StaFailCodeType=[OCTET],StaAuthenticationFailCause=[INTEGER],StaAssociationFailCauseStr=[OCTET], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/RADIO_CHANNEL_CHANGE_NOTIFY:OID [oid] Channelof radio is changed. (APMAC=[OPAQUE], RadioID=[INTEGER], APName=[OCTET], Channel=[INTEGER], CauseId=[INTEGER],CauseStr=[OCTET], PreChannel=[INTEGER], APID=[INTEGER])",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECREACHMAXTUNNELATONCE: OID [OID] Current countsof ipsec tunnel will reach max CPU limit or license limit, pleasecheck it at once.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECREACHMAXTUNNEL: OID [OID] Current counts of ipsectunnel will reach max CPU limit or license limit, please check it.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECRESETIPSECSA:OID[oid] Reset IPSec SA.(VsysName=[vsys-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECPOLICYADD:OID[oid] An IPSec policy is added. (SeqNum=[sequence-number], PolicyName=[policy-name], VsysName=[vsys-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NHRP/4/NHRPPEERADD:OID[oid] NHRP peer is added.(Interface=[interface-name], protocol-address=[protocol-address], mask=[mask], next-hop=[next-hop-address], nbma-address=[nbma-address], type=[peer-type])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DOT1X/4/MACAREACHMAXNUM:OID [OID] The number of usershas reached the max number.(PortIndex=[INTEGER], PortName=[OCTET])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DOT1X/4/8021XREACHMAXNUM:OID [OID] The number of usershas reached the max number.(PortIndex=[INTEGER], PortName=[OCTET])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/VAP_REACH_MAX_USERS:OID [oid] VAP has the max number of stations notify.(APMAC=[OPAQUE],APName=[STRING], RADIOID=[INTEGER], WLANID=[INTEGER], FailCause=[INTEGER], PermitNum=[INTEGER], APID=[INTEGER])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/AP_REACH_MAX_USERS_RESTORE:OID [oid] AP has the max number of stations notify restore.(APMAC=[OPAQUE], APName=[STRING], FailCause=[INTEGER],CurrentNum=[INTEGER], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IKEREACHMAXPEERATONCE:OID[OID] Current counts of ike peer reach max limit.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IPSECPOLICYATTACH:OID[oid] An IPSec policy is applied to an interface.(IfIndex=[interface-index], PolicyName=[policy-name], VsysName=[vsys-name], InterfaceName=[interface-name])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/RADIO_POWER_CHANGE:OID [oid] Power of radio is changed.(APMAC=[OPAQUE], RadioID=[INTEGER],APName=[OCTET], ACTUAL POWER=[INTEGER], APID=[INTEGER])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/AP_RADIO_UP: OID [oid] The radio changes to up.(APMAC=[OPAQUE], ApName=[OCTET], event=[INTEGER], APID=[INTEGER])",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/RADIO_ENV_RESUME:OID [oid] Radio signal environment resumes. (APMAC=[OPAQUE], RadioID=[INTEGER],APName=[OCTET], APID=[INTEGER])",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC/4/IKESAPHASE1ESTABLISHED:OID[OID] IKE phase1 sa established. (PeerAddress=[PeerAddress], PeerPort=[PeerPort], LocalAddress=[LocalAddress], AuthMethod=[AuthMethod], AuthID=[AuthID], IDType=[IDType], VsysName=[vsys-name], Role=[Role])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "WLAN/4/AP_UNSUPPORT_CHANNEL:OID [oid] AP not support configured channel notify.(APMAC=[MacAddress],RadioID=[INTEGER],APName=[OCTET], CONFIGURED BANDWIDTH=[INTEGER], CONFIGURED CHANNEL=[INTEGER], ACTUAL BANDWIDTH=[INTEGER], ACTUAL CHANNEL=[INTEGER], REASON=[OCTET], APID=[INTEGER])",
+  "output": "processingErrorAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/6/IPUSAGEBELOWTHRESHOLD:OIDOIDThe public ip usage of pool [pool-name] is normal in [system-name] system , slot [slot-id] cpu [cpu-id].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CARNAT/6/POOL_NORMAL_TRAP:OIDOIDThe resource usage of SRCIP-CARpool on SPU [spu-id] ,CPU [cpu-id], pool id [pool-id], source IP total number [ip-number],usage [usage-value],fellbelow the threshold [threshold-value].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "UM/3/DATABASEFILECORRUPTED: OID [OID] The databasefile is corrupted.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/NEG_DIFF_HASHMODE:[oid] local id:[node-id], hash-mode:[hash-mode], hash-gene:[hash-gene], masterhash-mode:[hash-mode], master hash-gene:[hash-gene],it was inconsistency with the master, changed to a state of initialization.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC_ADP/4/IPSEC_LINK_NEGO_FAIL: OID [oid] IPSec smart link negotiation fails.(SmartLinkName=[smartlink-name], LocalAddr:[local-address], RemoteAddr:[remote-address], FailedReason:failedreason).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PPPOE-SERVER/4/PppoeUsersBelowPerInterfaceThres:OIDThe number of online PPPoE users on the interface [interface-number] is [user-number], lower than the threshold value [threshold-value].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DSLITE/6/DSLITESESSTRAP:Slot=hwSecDsliteTrapSlot/hwSecDsliteTrapCPU,Vcpu=0;[OID] The number of total sessions initiated by the user [hwSecDsliteCpeAddress] fell below the upper limit. [hwSecDsliteSessionNumber] sessions, tunnel ID:[hwSecDsliteTunnelID], threshold:[hwSecDsliteThresholdNum], slot number:[hwSecDsliteTrapSlot], cpu number:[hwSecDsliteTrapCPU].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/3/CHL_STATUS:[oid] Dest node:[node-id], local node:[node-id], [channel-type] channel statusabnormal.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/NEG_DIFF_DEVICE:[oid] Local id:[node-id], product index:[hash], master id:[node-id], index:[hash], it was inconsistency with the master, changed to a stateof initialization.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USERTBL/6/USERTBL_NORMAL_TRAP:OID 1.3.6.1.4.1.2011.6.122.18.7.2.2The usage of user table on SPU [hwNatTrapSlotID] CPU [hwNatTrapCpuID], user table total [hwNatTrapUserTableTotal], usage [hwNatTrapThreshold], is returning to normal, threshold value [hwNatTrapCfgThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FW_SLB/4/UP: [oid] SLB real server status changedto up.(GroupIndex=[group-id],GroupName=[group-name],ServerIndex=[server-id],ServerIp=[server-ip],OldStatus=[old-status],NewStatus=[new-status]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/4/CGN_SM_COPYCONFIG_TRAP:OID, From FTP server [hwNatSMCopyFtpServer], download configration file [hwNatSMCopySrcFileName], download state is [hwNatSMCopyState], begin time is [hwNatSMCopyTimeStarted], end time is [hwNatSMCopyTimeCompleted], failcause is [hwNatSMCopyFailCause].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/4/IPEXCLUDED:OIDIP [STRING] is excluded.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BFD/4/BFD_SESSLMT_TRAP:OID [oid] The session numberin all the IO boards has reached the limit, the new session cannot be created. (TotalSessionLimit=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "UM/6/ADSSOAGENTACTIVE:OID [OID] The AD SSO Agent is connected to the NGFW. (IP address = [IP address], MAC address = [MAC address]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/6/CHL_STATUS:[oid] Dest node:[node-id], local node:[node-id], [channel-type] channel statusnormal.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/BG_FSM_STATUS:[oid] Cluster id:[cluster-id], local id:[node-id], business-group id:[business-group-id], fsm status:[state] changed to [state].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USERTBL/3/USERTBL_USEDUP_TRAP:OID 1.3.6.1.4.1.2011.6.122.18.7.2.1.The usage of user table on SPU [hwNatTrapSlotID] CPU [hwNatTrapCpuID], user table total [hwNatTrapUserTableTotal], usage [hwNatTrapThreshold],is exceeding threshold value [hwNatTrapCfgThreshold].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "TPDNS/4/DOWN: [oid] DNS server status changed to down.(ServerIp=[ip-address],OldStatus=[old-status],NewStatus=[new-status]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USER/4/USER_OVER_SPEC:OID [OID] The number of online users has reached the device specification.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC_ADP/6/IPSEC_LINK_NEGO_SUCCESS: OID[oid] IPSec smart link negotiation succeeds.(SmartLinkName=[smartlink-name], LocalAddr:[local-address], RemoteAddr:[remote-address]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/NEG_DOUBLE_MASTER:[oid] DoubleMaster, cluster id:[cluster-id], local id:[node-id],priority:[priority], slave numbers:[slave-number], peermaster:[node-id]'s priority:[priority], slave numbers:[slave-number], notified by [packet-type] packets.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PPPOE-SERVER/4/PppoeUsersBelowThreshold:OIDThenumber of online PPPoE users is [user-number], lower than thethreshold value [threshold-value].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/2/DISKUNAVAILABLE: [oid] [disk-type] was damaged.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L2TP/4/L2tpUsersReachMax:[oid] The number ofonline L2TP users has reached the upper limit.(slot number =slot-number, cpu number =cpu-number)",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/4/CLUST_COCHK: [oid] The configurationsbetween master id:[node-id] and slave id:[node-id] deviceis different([configuration-name]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DSLITE/6/DSLITEPORTTRAP:Slot=hwSecDsliteTrapSlot/hwSecDsliteTrapCPU,Vcpu=0;[OID] The number of total ports initiated by the user [hwSecDsliteCpeAddress] fell below the upper limit. [hwSecDsliteportNumber] ports, tunnel ID:[hwSecDsliteTunnelID], threshold:[hwSecDsliteThresholdNum], slot number:[hwSecDsliteTrapSlot], cpu number:[hwSecDsliteTrapCPU].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/NEG_FSM_STATUS:[oid] Cluster id:[cluster-id], local id:[node-id], fsm status:[state] changed to[state].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/6/ADDRSUFFI:OIDOIDAddress pool [pool-name] in [system-name] system is normal.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FULLCONE/6/CPUIPPOOLPORTUSAGENORMALTRAP:1.3.6.1.4.1.2011.6.122.48.2.3The usage of ip pool port on SPU[hwSecFullConeTrapSlot] CPU[hwSecFullConeTrapCPU],IpPoolIndex[hwSecFullConeTrapIpPoolIndex],usage [hwSecFullConeIpPoolPortUsageTrap]normal, threshold value [hwSecFullConeIpPoolPortUsageThresholdTrap].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/6/CLUST_CPU_RESUME:[oid] CPU usage resume,cluster id:[cluster-id], local id:[node-id], slot id:[slot-id], cpu id:[cpu-id], usage:[usage], nodes:[nodes-number], threshold:[threshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/4/CGN_SM_READCONFIG_TRAP:OIDOIDThe result code of loading configuration file [hwNatSMReadResultFileName] is [hwNatSMReadResultCode], and the description is [hwNatSMReadResultDescrip].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L2TP/5/L2tpSessionStart:[oid] L2tSessionStart:TID:[tunnel-id] SID:[session-id] RemoteAddr:[remote-address] UserName:[user-name] UserOnlineTime:[online-time]RemoteName:[remote-name] L2tpGroupNum: [group-number].",
+  "output": "environmentalAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L2TP/4/L2tpUsersBelowThreshold:The number of onlineL2TP users is lower than threshold value.(slot number =slot-number, cpu number =cpu-number)",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HEALTHCHECK/4/UP: [oid] Health check [name] changes status to [status].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CGN/4/PORT_USEDUP_TRAP:OIDOIDThe usage of allocable port on SPU [spu-name] ,CPU [cpu-id],user [user-ip],usage [usage-value], is exceeding threshold value[threshold-value].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/4/ADDRINSUFFI:OIDOIDAddress pool [pool-name] in [system-name] system will be exhausted.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DSLITE/3/DSLITEPORTTRAP:Slot=hwSecDsliteTrapSlot/hwSecDsliteTrapCPU,Vcpu=0;[OID] The number of total ports initiated by the user [hwSecDsliteCpeAddress] exceeded the threshold. [hwSecDsliteportNumber] ports, tunnel ID:[hwSecDsliteTunnelID], threshold:[hwSecDsliteThresholdNum], slot number:[hwSecDsliteTrapSlot], cpu number:[hwSecDsliteTrapCPU].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FAILOVER/4/CARD_TYPE_ERROR:OID [OID] The cardtype is incompatible. Please change the card or modify the configuration(backup_group_name:[backup-group-name],slot=[slot-id], cpu=[cpu-id]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/4/IPUSAGEOVERTHRESHOLD:OIDOIDThe publicip usage of pool [pool-name] in [system-name] systemexceeds threshold value [threshold-value], slot[slot-id] cpu [cpu-id].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/3/CLUST_CPU_OVER:[oid] Backup may be affectedby cpu usage over threashold, cluster id:[cluster-id], localid:[node-id], slot id:[slot-id], cpu id:[cpu-id], usage:[usage], nodes:[nodes-number], threshold:[threshold].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/6/BELOWTHRES:OIDOIDThe nat conflict rate of pool [pool-name] in [system-name] system is [INTEGER], fell below the lower threshold [threshold-value], slot [slot-id] cpu [cpu-id].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/3/OVERTHRES:OIDOIDThe nat conflict rateof pool [pool-name] in [system-name] system is [INTEGER],exceeded the upper threshold [threshold-value], slot [slot-id] cpu [cpu-id].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PPPOE-SERVER/4/PppoeUsersReachMax:OIDThe numberof online PPPoE users is [user-number], exceeded the thresholdvalue [threshold-value]",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USER/4/USER_BELOW_CPU_SPEC:OID [OID] The number of online users fell below the current CPU specification. (SLOT: [GAUGE] CPU: [GAUGE]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FULLCONE/3/CPUPUBLICIPPORTUSAGETRAP:1.3.6.1.4.1.2011.6.122.48.2.2 The usage of public ip port on SPU[hwSecFullConeTrapSlot] CPU[hwSecFullConeTrapCPU], ip [hwSecFullConeIpAddrTrap] usage [hwSecFullConeIpPortUsageTrap], exceeding thresholdvalue [hwSecFullConeIpPortUsageThresholdTrap].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPLINK/4/hwIPLinkDown: [OID] IP-link [name] changes status to down.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FULLCONE/6/CPUPUBLICIPPORTUSAGENORMALTRAP:1.3.6.1.4.1.2011.6.122.48.2.4 The usage of public ip port on SPU[hwSecFullConeTrapSlot] CPU[hwSecFullConeTrapCPU], ip [hwSecFullConeIpAddrTrap] usage [hwSecFullConeIpPortUsageTrap] normal, threshold value[hwSecFullConeIpPortUsageThresholdTrap].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CGN/3/POOL_USEDUP_TRAP:OIDOIDThe usage of ip pool port block on SPU [spu-name] ,CPU [cpu-id], pool id [pool-id], port block count[port-block-count],usage [usage-value],is exceeding threshold value [threshold-value].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/4/6RD:oidThe current number of 6RD sessions exceeds the threshold. (CurSessCnt=[CurrentSessionCount] TotalSessCnt=[TotalSessionCount] CurSessUsage=[SessionUsePersent] SessThreshold=[SessionThreShold])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VSYS/4/NEWVRFCREATED:[OID] A virtual firewall [virtual-firewall-name] is created. The virtual firewall ID equals to [virtual-firewall-id].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BFD/2/BFD_DOWN_TRAP:OID [oid] Session changes to DOWN.(Index=[integer], ConfigurationName=[octet], PeerIp=[ipaddr], BindIfIndex=[integer],BindIfName=[octet], Diagnosis=[integer], BindVrfIndex=[integer], BindVpnName=[octet],SessionType=[integer], DefaultIp=[integer], BindType=[integer], StaticLspName=[octet],PwSecondary=[integer], NextHop=[ipaddr], VcId=[integer], VsiName=[octet],VsiPeerAddress=[ipaddr], DiscrAuto=[integer], PeerIpv6=[ipv6addr],Ipv6NextHop=[ipv6addr])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/4/DSLite:oidThe current number of DS-Lite sessions exceeds the threshold. (CurSessCnt=[CurrentSessionCount] TotalSessCnt=[TotalSessionCount] CurSessUsage=[SessionUsePersent] SessThreshold=[SessionThreShold])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/4/NAT64:oidThe current number of NAT64 sessions exceeds the threshold. (CurSessCnt=[CurrentSessionCount] TotalSessCnt=[TotalSessionCount] CurSessUsage=[SessionUsePersent] SessThreshold=[SessionThreShold])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "DSLITE/3/DSLITESESSTRAP:Slot=hwSecDsliteTrapSlot/hwSecDsliteTrapCPU,Vcpu=0;[OID] The number of UDP sessions initiated by the user [hwSecDsliteCpeAddress] exceeded the threshold. [hwSecDsliteSessionNumber] sessions, tunnel ID:[hwSecDsliteTunnelID], threshold:[hwSecDsliteThresholdNum], slot number:[hwSecDsliteTrapSlot], cpu number:[hwSecDsliteTrapCPU].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "VSYS/4/OLDVRFDELETED:[OID] A virtual firewall [virtual-firewall-name] is deleted. The virtual firewall ID equals to [virtual-firewall-id] .",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BFD/2/BFD_UP_TRAP:OID [oid] Session changes to UP. (Index=[integer], ConfigurationName=[octet], PeerIp=[ipaddr], BindIfIndex=[integer], BindIfName=[octet], Diagnosis=[integer], BindVrfIndex=[integer], BindVpnName=[octet], SessionType=[integer],DefaultIp=[integer], BindType=[integer], StaticLspName=[octet], PwSecondary=[integer], NextHop=[ipaddr], VcId=[integer], VsiName=[octet], VsiPeerAddress=[ipaddr], DiscrAuto=[integer], PeerIpv6=[ipv6addr], Ipv6NextHop=[ipv6addr])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPLINK/4/hwIPLinkUp: [OID] IP-link [name] changes status to up.",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/6/6RD:oidThe current number of 6RD sessions is below the  threshold. (CurSessCnt=[CurrentSessionCount] TotalSessCnt=[TotalSessionCount] CurSessUsage=[SessionUsePersent] SessThreshold=[SessionThreShold])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/6/CPUCARBELOWTRAP: OID [oid]The performanceon slot[slot-id] CPU[cpu-id] fell below the alarm threshold[performance-usage-threshold].(TotalPerformance =per-cpu-Performance)",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "BFD/4/BFD_IFSESSLMT_TRAP:OID [oid] Try to build session,but the session number in the IO board with interface has reachedthe limit, the new session binding with interface cannot be created.(ConfigurationName=[octet], InterfaceName=[octet], SessionLimitPerBoard=[integer])",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/6/DSLite:oidThe current number of DS-Lite sessions is below the threshold. (CurSessCnt=[CurrentSessionCount] TotalSessCnt=[TotalSessionCount] CurSessUsage=[SessionUsePersent] SessThreshold=[SessionThreShold])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWLCNS/6/NAT64:oidThe current number of NAT64 sessions is below the threshold. (CurSessCnt=[CurrentSessionCount] TotalSessCnt=[TotalSessionCount] CurSessUsage=[SessionUsePersent] SessThreshold=[SessionThreShold])",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USER/4/USER_BELOW_SPEC:OID [OID] The number of online users fell below the device specification.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CARNAT/3/POOL_USEDUP_TRAP:OIDOIDThe resource usage of SRCIP-CAR pool on SPU [spu-id] ,CPU [cpu-id], pool id [pool-id], source IP total number [ip-number],usage [usage-value], exceeding the threshold[threshold-value].",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "IPSEC_ADP/4/IPSEC_LINK_SWITCH: [oid] The IPSeclink is switched from [old-link-id](LocalAddr=[old-local-address], RemoteAddr=[old-remote-address]) to [new-link-id](LocalAddr=[new-local-address], RemoteAddr=[new-remote-address]). (ProfileName=[profile-name], LossRate=[loss]%,Delay=[delay]ms, SwitchType=[switch-type]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "NAT/6/IPRELEASED:OIDIP [STRING] is released.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FW_TPDNS/4/UP: [oid] DNS serverstatus changed to up.(ServerIp=[ip-address],OldStatus=[old-status],NewStatus=[new-status]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FULLCONE/3/CPUIPPOOLPORTUSAGETRAP:1.3.6.1.4.1.2011.6.122.48.2.1 The usage of ip pool port on SPU[hwSecFullConeTrapSlot] CPU[hwSecFullConeTrapCPU],IpPoolIndex [hwSecFullConeTrapIpPoolIndex],usage [hwSecFullConeIpPoolPortUsageTrap],exceedingthreshold value [hwSecFullConeIpPoolPortUsageThresholdTrap].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CGN/6/PORT_NORMAL_TRAP:OIDOIDThe usage of allocable port on SPU[spu-name] ,CPU [cpu-id],user [user-ip],usage [usage-value], is returning to normal, threshold value [threshold-value].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "ENTEXT/4/DISKFULL: [oid] [disk-type] was full.",
+  "output": "equipmentAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "UM/4/ADSSOAGENTDEACTIVE:OID [OID] The AD SSO Agent is disconnected to the NGFW. (IP address = [IP address], MAC address = [MAC address]).",
+  "output": "communicationsAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FWD/3/CPUCARTRAP: OID [oid]The performance onslot[slot-id] CPU[cpu-id] has exceeded the alarm threshold[performance-usage-threshold].(TotalPerformance =per-cpu-Performance)",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "PPPOE-SERVER/4/PppoeUsersReachPerInterfaceMax:OIDThe number of online PPPoE users on the interface [interface-number] is [user-number], exceeded the threshold value [threshold-value].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "FW_SLB/4/DOWN: [oid] SLB real server status changedto down.(GroupIndex=[group-id],GroupName=[group-name],ServerIndex=[server-id],ServerIp=[server-ip],OldStatus=[old-status],NewStatus=[new-status]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/NEG_PRIORITY:[oid] Cluster id [cluster-id], local id [node-id], [state], peer id:[node-id]'s priority:[priority] changed to [priority], notifiedby [packet-type] packets.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CLRI/1/NEG_NBR_DN:[oid] Cluster id:[cluster-id], local id:[node-id], [state], peer id:[node-id]'s status:[nb-state] changed to [nb-state], notifiedby [packet-type] packets.",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "USER/4/USER_OVER_CPU_SPEC:OID [OID] The number of online users has reached the current CPU specification. (SLOT: [GAUGE] CPU: [GAUGE]).",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "CGN/6/POOL_NORMAL_TRAP:OIDOIDThe usage of ip pool port blockon SPU [spu-name] ,CPU [cpu-id], pool id [pool-id], port block count [port-block-count],usage [usage-value],isreturning to normal, threshold value [threshold-value].",
+  "output": "EventTrap"
+ },
+ {
+  "instruction": "alarms",
+  "input": "HEALTHCHECK/2/DOWN: [oid] Health check [name] changes status to [status].",
+  "output": "qualityOfServiceAlarm"
+ },
+ {
+  "instruction": "alarms",
+  "input": "L2TP/5/L2tpSessionStop:[oid] L2tpSessionStop:TID:[tunnel-id] SID:[session-id] RemoteAddr:[remote-address] UserName:[user-name] UserOfflineTime:[offline-time] RemoteName:[remote-name] L2tpGroupNum: [group-number].",
+  "output": "environmentalAlarm"
+ }
+]
